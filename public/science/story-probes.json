@@ -1,0 +1,187 @@
+{
+ "source": "model-v0.4 data images",
+ "probes": {
+  "khiva": {
+   "lat": 41.3782,
+   "lng": 60.3605,
+   "values": {
+    "ESI": {
+     "score": 51.0,
+     "stability": 63,
+     "range": 29.5
+    },
+    "TSI": {
+     "score": 96.0,
+     "stability": 100,
+     "range": 5.5
+    },
+    "TPI": {
+     "score": 96.5,
+     "stability": 100,
+     "range": 10.5
+    },
+    "TRSI": {
+     "score": 60.0,
+     "stability": 82,
+     "range": 10.5
+    }
+   }
+  },
+  "khorezm": {
+   "lat": 42.0056,
+   "lng": 61.0306,
+   "values": {
+    "ESI": {
+     "score": 81.5,
+     "stability": 67,
+     "range": 13.0
+    },
+    "TSI": {
+     "score": 89.0,
+     "stability": 90,
+     "range": 15.5
+    },
+    "TPI": {
+     "score": 88.0,
+     "stability": 73,
+     "range": 32.5
+    },
+    "TRSI": {
+     "score": 27.5,
+     "stability": 99,
+     "range": 9.5
+    }
+   }
+  },
+  "bukhara": {
+   "lat": 39.7759,
+   "lng": 64.4148,
+   "values": {
+    "ESI": {
+     "score": 31.0,
+     "stability": 62,
+     "range": 32.0
+    },
+    "TSI": {
+     "score": 95.5,
+     "stability": 100,
+     "range": 5.5
+    },
+    "TPI": {
+     "score": 95.5,
+     "stability": 100,
+     "range": 6.0
+    },
+    "TRSI": {
+     "score": 3.0,
+     "stability": 100,
+     "range": 2.5
+    }
+   }
+  },
+  "nurata": {
+   "lat": 40.92,
+   "lng": 66.0,
+   "values": {
+    "ESI": {
+     "score": 45.5,
+     "stability": 36,
+     "range": 49.0
+    },
+    "TSI": {
+     "score": 10.0,
+     "stability": 87,
+     "range": 22.0
+    },
+    "TPI": {
+     "score": 14.5,
+     "stability": 64,
+     "range": 46.0
+    },
+    "TRSI": {
+     "score": 45.0,
+     "stability": 34,
+     "range": 56.0
+    }
+   }
+  },
+  "samarkand": {
+   "lat": 39.6547,
+   "lng": 66.9753,
+   "values": {
+    "ESI": {
+     "score": 39.5,
+     "stability": 55,
+     "range": 32.0
+    },
+    "TSI": {
+     "score": 96.5,
+     "stability": 100,
+     "range": 4.5
+    },
+    "TPI": {
+     "score": 98.0,
+     "stability": 100,
+     "range": 3.0
+    },
+    "TRSI": {
+     "score": 22.5,
+     "stability": 83,
+     "range": 8.0
+    }
+   }
+  },
+  "shakhrisabz": {
+   "lat": 39.0607,
+   "lng": 66.8293,
+   "values": {
+    "ESI": {
+     "score": 10.0,
+     "stability": 93,
+     "range": 19.5
+    },
+    "TSI": {
+     "score": 63.0,
+     "stability": 79,
+     "range": 11.0
+    },
+    "TPI": {
+     "score": 81.5,
+     "stability": 57,
+     "range": 32.5
+    },
+    "TRSI": {
+     "score": 1.5,
+     "stability": 100,
+     "range": 1.0
+    }
+   }
+  },
+  "tashkent": {
+   "lat": 41.548,
+   "lng": 70.02,
+   "values": {
+    "ESI": {
+     "score": 93.0,
+     "stability": 100,
+     "range": 12.0
+    },
+    "TSI": {
+     "score": 86.5,
+     "stability": 84,
+     "range": 16.0
+    },
+    "TPI": {
+     "score": 95.5,
+     "stability": 98,
+     "range": 13.0
+    },
+    "TRSI": {
+     "score": 89.5,
+     "stability": 99,
+     "range": 10.5
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,345 @@
+{
+ "measured": "2026-11-15T17:26:11.486Z",
+ "base": "http://127.0.0.1:8787",
+ "runs": 5,
+ "note": "cold cache, production build served locally by wrangler; third-party tiles, photos and weather answered locally",
+ "results": {
+  "broadband:portal": {
+   "profile": {
+    "downMbps": 20,
+    "rttMs": 20,
+    "cpuSlowdown": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "median": {
+    "ttfb": 30,
+    "fcp": 268,
+    "lcp": 620,
+    "dcl": 221,
+    "load": 306,
+    "ready": 1403,
+    "bytes": 1723657,
+    "requests": 22
+   },
+   "runs": [
+    {
+     "ttfb": 32,
+     "fcp": 288,
+     "lcp": 752,
+     "dcl": 244,
+     "load": 308,
+     "ready": 1475,
+     "bytes": 1723650,
+     "requests": 22
+    },
+    {
+     "ttfb": 30,
+     "fcp": 268,
+     "lcp": 792,
+     "dcl": 221,
+     "load": 306,
+     "ready": 1410,
+     "bytes": 1723657,
+     "requests": 22
+    },
+    {
+     "ttfb": 30,
+     "fcp": 220,
+     "lcp": 584,
+     "dcl": 191,
+     "load": 298,
+     "ready": 1288,
+     "bytes": 1723657,
+     "requests": 22
+    },
+    {
+     "ttfb": 15,
+     "fcp": 280,
+     "lcp": 604,
+     "dcl": 270,
+     "load": 297,
+     "ready": 1403,
+     "bytes": 1723681,
+     "requests": 22
+    },
+    {
+     "ttfb": 19,
+     "fcp": 236,
+     "lcp": 620,
+     "dcl": 112,
+     "load": 324,
+     "ready": 1326,
+     "bytes": 1723681,
+     "requests": 22
+    }
+   ]
+  },
+  "broadband:story": {
+   "profile": {
+    "downMbps": 20,
+    "rttMs": 20,
+    "cpuSlowdown": 1,
+    "viewport": {
+     "width": 1440,
+     "height": 900
+    }
+   },
+   "median": {
+    "ttfb": 23,
+    "fcp": 220,
+    "lcp": 220,
+    "dcl": 202,
+    "load": 1124,
+    "ready": 1217,
+    "bytes": 1589460,
+    "requests": 22
+   },
+   "runs": [
+    {
+     "ttfb": 27,
+     "fcp": 220,
+     "lcp": 220,
+     "dcl": 210,
+     "load": 1142,
+     "ready": 1253,
+     "bytes": 1589448,
+     "requests": 22
+    },
+    {
+     "ttfb": 23,
+     "fcp": 212,
+     "lcp": 212,
+     "dcl": 193,
+     "load": 1124,
+     "ready": 1217,
+     "bytes": 1589465,
+     "requests": 22
+    },
+    {
+     "ttfb": 21,
+     "fcp": 220,
+     "lcp": 220,
+     "dcl": 214,
+     "load": 1126,
+     "ready": 1218,
+     "bytes": 1589460,
+     "requests": 22
+    },
+    {
+     "ttfb": 28,
+     "fcp": 200,
+     "lcp": 200,
+     "dcl": 185,
+     "load": 1046,
+     "ready": 1115,
+     "bytes": 1589382,
+     "requests": 22
+    },
+    {
+     "ttfb": 15,
+     "fcp": 236,
+     "lcp": 236,
+     "dcl": 202,
+     "load": 267,
+     "ready": 593,
+     "bytes": 1589465,
+     "requests": 22
+    }
+   ]
+  },
+  "slow-4g-mobile:portal": {
+   "profile": {
+    "downMbps": 1.6,
+    "rttMs": 150,
+    "cpuSlowdown": 4,
+    "viewport": {
+     "width": 390,
+     "height": 844
+    }
+   },
+   "median": {
+    "ttfb": 20,
+    "fcp": 1720,
+    "lcp": 3688,
+    "dcl": 1716,
+    "load": 2167,
+    "ready": 10354,
+    "bytes": 1723671,
+    "requests": 22
+   },
+   "runs": [
+    {
+     "ttfb": 18,
+     "fcp": 1640,
+     "lcp": 3788,
+     "dcl": 1618,
+     "load": 2290,
+     "ready": 10771,
+     "bytes": 1723671,
+     "requests": 22
+    },
+    {
+     "ttfb": 20,
+     "fcp": 1748,
+     "lcp": 3436,
+     "dcl": 1741,
+     "load": 2159,
+     "ready": 10354,
+     "bytes": 1723663,
+     "requests": 22
+    },
+    {
+     "ttfb": 22,
+     "fcp": 1720,
+     "lcp": 3688,
+     "dcl": 1716,
+     "load": 2146,
+     "ready": 10502,
+     "bytes": 1723674,
+     "requests": 22
+    },
+    {
+     "ttfb": 23,
+     "fcp": 1788,
+     "lcp": 3392,
+     "dcl": 1745,
+     "load": 2167,
+     "ready": 10290,
+     "bytes": 1723669,
+     "requests": 22
+    },
+    {
+     "ttfb": 20,
+     "fcp": 1712,
+     "lcp": 3704,
+     "dcl": 1711,
+     "load": 2250,
+     "ready": 10241,
+     "bytes": 1723684,
+     "requests": 22
+    }
+   ]
+  },
+  "slow-4g-mobile:story": {
+   "profile": {
+    "downMbps": 1.6,
+    "rttMs": 150,
+    "cpuSlowdown": 4,
+    "viewport": {
+     "width": 390,
+     "height": 844
+    }
+   },
+   "median": {
+    "ttfb": 26,
+    "fcp": 1656,
+    "lcp": 3124,
+    "dcl": 1642,
+    "load": 9139,
+    "ready": 9364,
+    "bytes": 1589463,
+    "requests": 22
+   },
+   "runs": [
+    {
+     "ttfb": 26,
+     "fcp": 1660,
+     "lcp": 3160,
+     "dcl": 1648,
+     "load": 9078,
+     "ready": 9364,
+     "bytes": 1589463,
+     "requests": 22
+    },
+    {
+     "ttfb": 32,
+     "fcp": 1660,
+     "lcp": 3124,
+     "dcl": 1642,
+     "load": 9139,
+     "ready": 9356,
+     "bytes": 1589473,
+     "requests": 22
+    },
+    {
+     "ttfb": 24,
+     "fcp": 1652,
+     "lcp": 3080,
+     "dcl": 1639,
+     "load": 9074,
+     "ready": 9327,
+     "bytes": 1589459,
+     "requests": 22
+    },
+    {
+     "ttfb": 33,
+     "fcp": 1656,
+     "lcp": 3096,
+     "dcl": 1655,
+     "load": 9316,
+     "ready": 9566,
+     "bytes": 1589457,
+     "requests": 22
+    },
+    {
+     "ttfb": 19,
+     "fcp": 1644,
+     "lcp": 3148,
+     "dcl": 1628,
+     "load": 9283,
+     "ready": 9522,
+     "bytes": 1589471,
+     "requests": 22
+    }
+   ]
+  }
+ },
+ "before_optimisation": {
+  "note": "same build before lossless WebP index images and precomputed story probes",
+  "median": {
+   "broadband:portal": {
+    "ttfb": 35,
+    "fcp": 216,
+    "lcp": 764,
+    "dcl": 187,
+    "load": 373,
+    "ready": 2483,
+    "bytes": 2381391,
+    "requests": 22
+   },
+   "broadband:story": {
+    "ttfb": 27,
+    "fcp": 200,
+    "lcp": 200,
+    "dcl": 183,
+    "load": 3145,
+    "ready": 3277,
+    "bytes": 6406176,
+    "requests": 24
+   },
+   "slow-4g-mobile:portal": {
+    "ttfb": 34,
+    "fcp": 1680,
+    "lcp": 3748,
+    "dcl": 1666,
+    "load": 2235,
+    "ready": 13747,
+    "bytes": 2381396,
+    "requests": 22
+   },
+   "slow-4g-mobile:story": {
+    "ttfb": 23,
+    "fcp": 1632,
+    "lcp": 3344,
+    "dcl": 1616,
+    "load": 32910,
+    "ready": 33116,
+    "bytes": 6406193,
+    "requests": 24
+   }
+  }
+ }
+}
