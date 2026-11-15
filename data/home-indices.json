@@ -1,0 +1,6 @@
+[
+  {"id":"ESI","color":"#279557","background":"#eaf6ed","name":{"uz":"Ekoturizmga moslik","en":"Ecotourism suitability","ru":"Пригодность для экотуризма"},"summary":{"uz":"Tabiiy muhit va mas’uliyatli tashrif","en":"Nature and responsible visits","ru":"Природа и ответственное посещение"}},
+  {"id":"TSI","color":"#3f76c1","background":"#edf3fe","name":{"uz":"Turizmga moslik","en":"Tourism suitability","ru":"Пригодность для туризма"},"summary":{"uz":"Resurs, kirish va amaldagi xizmatlar","en":"Resources, access and existing services","ru":"Ресурсы, доступ и действующие услуги"}},
+  {"id":"TPI","color":"#bd7a20","background":"#fdf4e6","name":{"uz":"Turistik salohiyat","en":"Tourism potential","ru":"Туристический потенциал"},"summary":{"uz":"Tabiiy va madaniy resurslar qiymati","en":"Natural and cultural resource value","ru":"Ценность природных и культурных ресурсов"}},
+  {"id":"TRSI","color":"#8653b7","background":"#f4eefd","name":{"uz":"Rekreatsiya mosligi","en":"Recreation suitability","ru":"Пригодность для рекреации"},"summary":{"uz":"Sayr va ochiq havoda dam olish qulayligi","en":"Walking and outdoor recreation comfort","ru":"Комфорт прогулок и отдыха на природе"}}
+]
