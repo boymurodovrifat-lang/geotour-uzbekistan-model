@@ -1,0 +1,968 @@
+[
+  {
+    "name": "Toshkent shahri",
+    "lat": 41.31,
+    "lng": 69.28,
+    "ESI": 57.18,
+    "TSI": 86.94,
+    "TPI": 98.08,
+    "TRSI": 74.74,
+    "ETSI": 38.02,
+    "id": "region-0",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 334.8972,
+        "excluded_water_snow_or_missing_km2": 2.0457,
+        "class_area_km2": {
+          "1": 0.0,
+          "2": 13.9707,
+          "3": 223.353,
+          "4": 61.4718,
+          "5": 36.1017
+        }
+      },
+      "TSI": {
+        "assessed_km2": 334.8972,
+        "excluded_water_snow_or_missing_km2": 2.0457,
+        "class_area_km2": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 56.7612,
+          "5": 278.136
+        }
+      },
+      "TPI": {
+        "assessed_km2": 334.8972,
+        "excluded_water_snow_or_missing_km2": 2.0457,
+        "class_area_km2": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 334.8972
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 334.8972,
+        "excluded_water_snow_or_missing_km2": 2.0457,
+        "class_area_km2": {
+          "1": 0.0009,
+          "2": 0.0072,
+          "3": 22.0725,
+          "4": 202.9662,
+          "5": 109.8504
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 334.8972,
+        "excluded_water_snow_or_missing_km2": 2.0457,
+        "class_area_km2": {
+          "1": 22.7664,
+          "2": 202.806,
+          "3": 72.0801,
+          "4": 20.4984,
+          "5": 16.7463
+        }
+      }
+    }
+  },
+  {
+    "name": "Toshkent viloyati",
+    "lat": 41.12,
+    "lng": 69.75,
+    "ESI": 68.65,
+    "TSI": 46.76,
+    "TPI": 70.41,
+    "TRSI": 34.29,
+    "ETSI": 28.97,
+    "id": "region-1",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 14875.3089,
+        "excluded_water_snow_or_missing_km2": 326.5749,
+        "class_area_km2": {
+          "1": 181.1853,
+          "2": 2180.1708,
+          "3": 2943.3123,
+          "4": 2892.6693,
+          "5": 6677.9712
+        }
+      },
+      "TSI": {
+        "assessed_km2": 14875.3089,
+        "excluded_water_snow_or_missing_km2": 326.5749,
+        "class_area_km2": {
+          "1": 1377.5814,
+          "2": 3832.8849,
+          "3": 5757.7941,
+          "4": 3353.6763,
+          "5": 553.3722
+        }
+      },
+      "TPI": {
+        "assessed_km2": 14875.3089,
+        "excluded_water_snow_or_missing_km2": 326.5749,
+        "class_area_km2": {
+          "1": 628.4718,
+          "2": 941.4432,
+          "3": 2940.6933,
+          "4": 3755.6091,
+          "5": 6609.0915
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 14875.3089,
+        "excluded_water_snow_or_missing_km2": 326.5749,
+        "class_area_km2": {
+          "1": 4525.92,
+          "2": 3946.734,
+          "3": 3800.0835,
+          "4": 2174.6349,
+          "5": 427.9365
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 14875.3089,
+        "excluded_water_snow_or_missing_km2": 326.5749,
+        "class_area_km2": {
+          "1": 5166.8271,
+          "2": 6049.629,
+          "3": 2648.0385,
+          "4": 841.3632,
+          "5": 169.4511
+        }
+      }
+    }
+  },
+  {
+    "name": "Samarqand",
+    "lat": 39.65,
+    "lng": 66.96,
+    "ESI": 32.49,
+    "TSI": 21.19,
+    "TPI": 23.63,
+    "TRSI": 26.24,
+    "ETSI": 8.85,
+    "id": "region-2",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 16423.5564,
+        "excluded_water_snow_or_missing_km2": 123.5853,
+        "class_area_km2": {
+          "1": 6937.578,
+          "2": 4135.1832,
+          "3": 2672.9118,
+          "4": 1784.3085,
+          "5": 893.5749
+        }
+      },
+      "TSI": {
+        "assessed_km2": 16423.5564,
+        "excluded_water_snow_or_missing_km2": 123.5853,
+        "class_area_km2": {
+          "1": 8931.8808,
+          "2": 5252.6151,
+          "3": 1798.9983,
+          "4": 335.4831,
+          "5": 104.5791
+        }
+      },
+      "TPI": {
+        "assessed_km2": 16423.5564,
+        "excluded_water_snow_or_missing_km2": 123.5853,
+        "class_area_km2": {
+          "1": 9259.7967,
+          "2": 2744.9262,
+          "3": 1808.5482,
+          "4": 1558.2906,
+          "5": 1051.9947
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 16423.5564,
+        "excluded_water_snow_or_missing_km2": 123.5853,
+        "class_area_km2": {
+          "1": 7353.6993,
+          "2": 5356.0692,
+          "3": 2614.2957,
+          "4": 972.9009,
+          "5": 126.5913
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 16423.5564,
+        "excluded_water_snow_or_missing_km2": 123.5853,
+        "class_area_km2": {
+          "1": 14187.4236,
+          "2": 1983.1464,
+          "3": 227.3076,
+          "4": 25.4844,
+          "5": 0.1944
+        }
+      }
+    }
+  },
+  {
+    "name": "Buxoro",
+    "lat": 39.77,
+    "lng": 64.43,
+    "ESI": 18.72,
+    "TSI": 11.68,
+    "TPI": 8.03,
+    "TRSI": 10.84,
+    "ETSI": 3.67,
+    "id": "region-3",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 38938.2318,
+        "excluded_water_snow_or_missing_km2": 559.8774,
+        "class_area_km2": {
+          "1": 25221.2373,
+          "2": 10829.7945,
+          "3": 2418.9894,
+          "4": 424.9269,
+          "5": 43.2837
+        }
+      },
+      "TSI": {
+        "assessed_km2": 38938.2318,
+        "excluded_water_snow_or_missing_km2": 559.8774,
+        "class_area_km2": {
+          "1": 31512.654,
+          "2": 4612.1958,
+          "3": 2253.8205,
+          "4": 490.941,
+          "5": 68.6205
+        }
+      },
+      "TPI": {
+        "assessed_km2": 38938.2318,
+        "excluded_water_snow_or_missing_km2": 559.8774,
+        "class_area_km2": {
+          "1": 32829.6654,
+          "2": 2529.8604,
+          "3": 1645.6824,
+          "4": 1412.4987,
+          "5": 520.5249
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 38938.2318,
+        "excluded_water_snow_or_missing_km2": 559.8774,
+        "class_area_km2": {
+          "1": 31384.6974,
+          "2": 5037.5223,
+          "3": 1869.6276,
+          "4": 559.8612,
+          "5": 86.5233
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 38938.2318,
+        "excluded_water_snow_or_missing_km2": 559.8774,
+        "class_area_km2": {
+          "1": 37016.3097,
+          "2": 1800.8874,
+          "3": 116.2494,
+          "4": 4.5639,
+          "5": 0.2214
+        }
+      }
+    }
+  },
+  {
+    "name": "Xorazm",
+    "lat": 41.55,
+    "lng": 60.63,
+    "ESI": 28.9,
+    "TSI": 28.86,
+    "TPI": 32.35,
+    "TRSI": 26.94,
+    "ETSI": 13.22,
+    "id": "region-4",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 6595.3197,
+        "excluded_water_snow_or_missing_km2": 239.8059,
+        "class_area_km2": {
+          "1": 1918.4094,
+          "2": 3108.6468,
+          "3": 1214.748,
+          "4": 311.6952,
+          "5": 41.8203
+        }
+      },
+      "TSI": {
+        "assessed_km2": 6595.3197,
+        "excluded_water_snow_or_missing_km2": 239.8059,
+        "class_area_km2": {
+          "1": 2290.0716,
+          "2": 2621.7297,
+          "3": 1382.8284,
+          "4": 254.5569,
+          "5": 46.1331
+        }
+      },
+      "TPI": {
+        "assessed_km2": 6595.3197,
+        "excluded_water_snow_or_missing_km2": 239.8059,
+        "class_area_km2": {
+          "1": 2543.1552,
+          "2": 1744.4331,
+          "3": 909.6327,
+          "4": 800.7948,
+          "5": 597.3039
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 6595.3197,
+        "excluded_water_snow_or_missing_km2": 239.8059,
+        "class_area_km2": {
+          "1": 2844.0009,
+          "2": 2115.9702,
+          "3": 1121.5224,
+          "4": 440.8812,
+          "5": 72.945
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 6595.3197,
+        "excluded_water_snow_or_missing_km2": 239.8059,
+        "class_area_km2": {
+          "1": 5040.963,
+          "2": 1396.2528,
+          "3": 149.1147,
+          "4": 7.9578,
+          "5": 1.0314
+        }
+      }
+    }
+  },
+  {
+    "name": "Qoraqalpog‘iston",
+    "lat": 43,
+    "lng": 59,
+    "ESI": 15.71,
+    "TSI": 5.45,
+    "TPI": 8.84,
+    "TRSI": 5.06,
+    "ETSI": 2.13,
+    "id": "region-5",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 162656.0181,
+        "excluded_water_snow_or_missing_km2": 641.4039,
+        "class_area_km2": {
+          "1": 114627.7368,
+          "2": 29891.2842,
+          "3": 13479.858,
+          "4": 4060.4121,
+          "5": 596.727
+        }
+      },
+      "TSI": {
+        "assessed_km2": 162656.0181,
+        "excluded_water_snow_or_missing_km2": 641.4039,
+        "class_area_km2": {
+          "1": 147723.5961,
+          "2": 10408.0167,
+          "3": 3563.5122,
+          "4": 824.7312,
+          "5": 136.1619
+        }
+      },
+      "TPI": {
+        "assessed_km2": 162656.0181,
+        "excluded_water_snow_or_missing_km2": 641.4039,
+        "class_area_km2": {
+          "1": 132744.1986,
+          "2": 14189.1165,
+          "3": 9307.3221,
+          "4": 3998.1177,
+          "5": 2417.2632
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 162656.0181,
+        "excluded_water_snow_or_missing_km2": 641.4039,
+        "class_area_km2": {
+          "1": 148068.6642,
+          "2": 9314.757,
+          "3": 3572.9379,
+          "4": 1431.3564,
+          "5": 268.3026
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 162656.0181,
+        "excluded_water_snow_or_missing_km2": 641.4039,
+        "class_area_km2": {
+          "1": 157751.1819,
+          "2": 4017.5649,
+          "3": 759.0114,
+          "4": 118.3428,
+          "5": 9.9171
+        }
+      }
+    }
+  },
+  {
+    "name": "Navoiy",
+    "lat": 40.1,
+    "lng": 65.37,
+    "ESI": 22.41,
+    "TSI": 5.27,
+    "TPI": 5.46,
+    "TRSI": 5.52,
+    "ETSI": 1.46,
+    "id": "region-6",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 108532.0944,
+        "excluded_water_snow_or_missing_km2": 1311.6744,
+        "class_area_km2": {
+          "1": 60455.9079,
+          "2": 31520.9727,
+          "3": 12723.3846,
+          "4": 3280.8726,
+          "5": 550.9566
+        }
+      },
+      "TSI": {
+        "assessed_km2": 108532.0944,
+        "excluded_water_snow_or_missing_km2": 1311.6744,
+        "class_area_km2": {
+          "1": 99612.0054,
+          "2": 6596.6247,
+          "3": 1909.8936,
+          "4": 370.3419,
+          "5": 43.2288
+        }
+      },
+      "TPI": {
+        "assessed_km2": 108532.0944,
+        "excluded_water_snow_or_missing_km2": 1311.6744,
+        "class_area_km2": {
+          "1": 95639.517,
+          "2": 7205.4603,
+          "3": 2782.2537,
+          "4": 2336.4324,
+          "5": 568.431
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 108532.0944,
+        "excluded_water_snow_or_missing_km2": 1311.6744,
+        "class_area_km2": {
+          "1": 97757.712,
+          "2": 6814.6002,
+          "3": 2668.9446,
+          "4": 1049.7627,
+          "5": 241.0749
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 108532.0944,
+        "excluded_water_snow_or_missing_km2": 1311.6744,
+        "class_area_km2": {
+          "1": 107672.6223,
+          "2": 804.3156,
+          "3": 55.1565,
+          "4": 0.0,
+          "5": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Jizzax",
+    "lat": 40.12,
+    "lng": 67.84,
+    "ESI": 44.48,
+    "TSI": 24.84,
+    "TPI": 27.73,
+    "TRSI": 24.49,
+    "ETSI": 13.07,
+    "id": "region-7",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 18689.1957,
+        "excluded_water_snow_or_missing_km2": 2326.6287,
+        "class_area_km2": {
+          "1": 3195.5832,
+          "2": 5837.7735,
+          "3": 4319.0667,
+          "4": 3636.504,
+          "5": 1700.2683
+        }
+      },
+      "TSI": {
+        "assessed_km2": 18689.1957,
+        "excluded_water_snow_or_missing_km2": 2326.6287,
+        "class_area_km2": {
+          "1": 8847.8829,
+          "2": 6917.6151,
+          "3": 2118.8655,
+          "4": 684.3312,
+          "5": 120.501
+        }
+      },
+      "TPI": {
+        "assessed_km2": 18689.1957,
+        "excluded_water_snow_or_missing_km2": 2326.6287,
+        "class_area_km2": {
+          "1": 9104.6313,
+          "2": 3519.9621,
+          "3": 2933.1729,
+          "4": 1602.459,
+          "5": 1528.9704
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 18689.1957,
+        "excluded_water_snow_or_missing_km2": 2326.6287,
+        "class_area_km2": {
+          "1": 9691.3287,
+          "2": 5399.9406,
+          "3": 2458.7514,
+          "4": 916.704,
+          "5": 222.471
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 18689.1957,
+        "excluded_water_snow_or_missing_km2": 2326.6287,
+        "class_area_km2": {
+          "1": 14765.2317,
+          "2": 2956.3452,
+          "3": 773.6994,
+          "4": 173.7558,
+          "5": 20.1636
+        }
+      }
+    }
+  },
+  {
+    "name": "Sirdaryo",
+    "lat": 40.49,
+    "lng": 68.78,
+    "ESI": 23.52,
+    "TSI": 27.87,
+    "TPI": 25.05,
+    "TRSI": 37.45,
+    "ETSI": 9.47,
+    "id": "region-8",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 4224.5172,
+        "excluded_water_snow_or_missing_km2": 131.8689,
+        "class_area_km2": {
+          "1": 1858.3596,
+          "2": 1998.6048,
+          "3": 338.4045,
+          "4": 28.7001,
+          "5": 0.4482
+        }
+      },
+      "TSI": {
+        "assessed_km2": 4224.5172,
+        "excluded_water_snow_or_missing_km2": 131.8689,
+        "class_area_km2": {
+          "1": 1166.4189,
+          "2": 2348.1756,
+          "3": 646.6401,
+          "4": 63.2826,
+          "5": 0.0
+        }
+      },
+      "TPI": {
+        "assessed_km2": 4224.5172,
+        "excluded_water_snow_or_missing_km2": 131.8689,
+        "class_area_km2": {
+          "1": 2146.2291,
+          "2": 567.6291,
+          "3": 897.1812,
+          "4": 610.9317,
+          "5": 2.5461
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 4224.5172,
+        "excluded_water_snow_or_missing_km2": 131.8689,
+        "class_area_km2": {
+          "1": 814.4748,
+          "2": 1743.183,
+          "3": 1117.3752,
+          "4": 465.2703,
+          "5": 84.2139
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 4224.5172,
+        "excluded_water_snow_or_missing_km2": 131.8689,
+        "class_area_km2": {
+          "1": 3972.879,
+          "2": 250.416,
+          "3": 1.2222,
+          "4": 0.0,
+          "5": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Farg‘ona",
+    "lat": 40.39,
+    "lng": 71.79,
+    "ESI": 22.97,
+    "TSI": 29.3,
+    "TPI": 34.62,
+    "TRSI": 25.25,
+    "ETSI": 8.49,
+    "id": "region-9",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 6624.8946,
+        "excluded_water_snow_or_missing_km2": 105.7329,
+        "class_area_km2": {
+          "1": 3688.281,
+          "2": 1937.7558,
+          "3": 704.4147,
+          "4": 243.8235,
+          "5": 50.6196
+        }
+      },
+      "TSI": {
+        "assessed_km2": 6624.8946,
+        "excluded_water_snow_or_missing_km2": 105.7329,
+        "class_area_km2": {
+          "1": 2085.642,
+          "2": 2921.5854,
+          "3": 1331.8146,
+          "4": 280.143,
+          "5": 5.7096
+        }
+      },
+      "TPI": {
+        "assessed_km2": 6624.8946,
+        "excluded_water_snow_or_missing_km2": 105.7329,
+        "class_area_km2": {
+          "1": 2931.039,
+          "2": 916.9938,
+          "3": 564.2397,
+          "4": 1400.6952,
+          "5": 811.9269
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 6624.8946,
+        "excluded_water_snow_or_missing_km2": 105.7329,
+        "class_area_km2": {
+          "1": 3206.8719,
+          "2": 2012.5251,
+          "3": 1008.6408,
+          "4": 347.274,
+          "5": 49.5828
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 6624.8946,
+        "excluded_water_snow_or_missing_km2": 105.7329,
+        "class_area_km2": {
+          "1": 5935.1589,
+          "2": 647.5716,
+          "3": 42.1641,
+          "4": 0.0,
+          "5": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Namangan",
+    "lat": 41,
+    "lng": 71.67,
+    "ESI": 46.29,
+    "TSI": 28.82,
+    "TPI": 36.58,
+    "TRSI": 27.09,
+    "ETSI": 13.53,
+    "id": "region-10",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 7261.9002,
+        "excluded_water_snow_or_missing_km2": 97.8507,
+        "class_area_km2": {
+          "1": 1165.2426,
+          "2": 2331.9261,
+          "3": 1479.8232,
+          "4": 1271.5704,
+          "5": 1013.3379
+        }
+      },
+      "TSI": {
+        "assessed_km2": 7261.9002,
+        "excluded_water_snow_or_missing_km2": 97.8507,
+        "class_area_km2": {
+          "1": 2103.6924,
+          "2": 3660.5961,
+          "3": 1407.375,
+          "4": 90.2367,
+          "5": 0.0
+        }
+      },
+      "TPI": {
+        "assessed_km2": 7261.9002,
+        "excluded_water_snow_or_missing_km2": 97.8507,
+        "class_area_km2": {
+          "1": 2243.8233,
+          "2": 1609.3998,
+          "3": 1608.948,
+          "4": 1356.912,
+          "5": 442.8171
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 7261.9002,
+        "excluded_water_snow_or_missing_km2": 97.8507,
+        "class_area_km2": {
+          "1": 3194.4348,
+          "2": 2473.029,
+          "3": 1132.488,
+          "4": 388.7217,
+          "5": 73.2267
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 7261.9002,
+        "excluded_water_snow_or_missing_km2": 97.8507,
+        "class_area_km2": {
+          "1": 5668.7832,
+          "2": 1502.4951,
+          "3": 90.6219,
+          "4": 0.0,
+          "5": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Andijon",
+    "lat": 40.78,
+    "lng": 72.34,
+    "ESI": 35.8,
+    "TSI": 37.91,
+    "TPI": 47.52,
+    "TRSI": 34.83,
+    "ETSI": 18.59,
+    "id": "region-11",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 4180.8015,
+        "excluded_water_snow_or_missing_km2": 40.0779,
+        "class_area_km2": {
+          "1": 717.3189,
+          "2": 2128.5414,
+          "3": 867.4209,
+          "4": 347.8464,
+          "5": 119.6739
+        }
+      },
+      "TSI": {
+        "assessed_km2": 4180.8015,
+        "excluded_water_snow_or_missing_km2": 40.0779,
+        "class_area_km2": {
+          "1": 573.6636,
+          "2": 1733.3352,
+          "3": 1559.9736,
+          "4": 270.2133,
+          "5": 43.6158
+        }
+      },
+      "TPI": {
+        "assessed_km2": 4180.8015,
+        "excluded_water_snow_or_missing_km2": 40.0779,
+        "class_area_km2": {
+          "1": 947.2455,
+          "2": 724.4883,
+          "3": 916.9722,
+          "4": 858.384,
+          "5": 733.7115
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 4180.8015,
+        "excluded_water_snow_or_missing_km2": 40.0779,
+        "class_area_km2": {
+          "1": 1127.5524,
+          "2": 1566.8406,
+          "3": 977.7438,
+          "4": 432.0648,
+          "5": 76.5999
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 4180.8015,
+        "excluded_water_snow_or_missing_km2": 40.0779,
+        "class_area_km2": {
+          "1": 2482.0911,
+          "2": 1538.6319,
+          "3": 152.4627,
+          "4": 7.5231,
+          "5": 0.0927
+        }
+      }
+    }
+  },
+  {
+    "name": "Qashqadaryo",
+    "lat": 38.86,
+    "lng": 65.8,
+    "ESI": 36.38,
+    "TSI": 16.18,
+    "TPI": 14.84,
+    "TRSI": 20.52,
+    "ETSI": 6.31,
+    "id": "region-12",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 28557.9963,
+        "excluded_water_snow_or_missing_km2": 203.8122,
+        "class_area_km2": {
+          "1": 9558.0585,
+          "2": 6850.5318,
+          "3": 6278.5944,
+          "4": 4512.8556,
+          "5": 1357.956
+        }
+      },
+      "TSI": {
+        "assessed_km2": 28557.9963,
+        "excluded_water_snow_or_missing_km2": 203.8122,
+        "class_area_km2": {
+          "1": 20367.2736,
+          "2": 6563.3904,
+          "3": 1471.698,
+          "4": 155.6343,
+          "5": 0.0
+        }
+      },
+      "TPI": {
+        "assessed_km2": 28557.9963,
+        "excluded_water_snow_or_missing_km2": 203.8122,
+        "class_area_km2": {
+          "1": 19517.283,
+          "2": 4862.9727,
+          "3": 2080.7946,
+          "4": 1529.2962,
+          "5": 567.6498
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 28557.9963,
+        "excluded_water_snow_or_missing_km2": 203.8122,
+        "class_area_km2": {
+          "1": 16472.7396,
+          "2": 8131.6413,
+          "3": 2941.2855,
+          "4": 896.5503,
+          "5": 115.7796
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 28557.9963,
+        "excluded_water_snow_or_missing_km2": 203.8122,
+        "class_area_km2": {
+          "1": 26501.5026,
+          "2": 1979.6409,
+          "3": 76.8528,
+          "4": 0.0,
+          "5": 0.0
+        }
+      }
+    }
+  },
+  {
+    "name": "Surxondaryo",
+    "lat": 37.94,
+    "lng": 67.57,
+    "ESI": 54.44,
+    "TSI": 21.73,
+    "TPI": 33.16,
+    "TRSI": 19.42,
+    "ETSI": 9.33,
+    "id": "region-13",
+    "scoreStatus": "provisional_screening_30m",
+    "coverage": {
+      "ESI": {
+        "assessed_km2": 19499.6979,
+        "excluded_water_snow_or_missing_km2": 167.6448,
+        "class_area_km2": {
+          "1": 1219.3758,
+          "2": 4700.9502,
+          "3": 4975.9911,
+          "4": 5704.3305,
+          "5": 2899.0503
+        }
+      },
+      "TSI": {
+        "assessed_km2": 19499.6979,
+        "excluded_water_snow_or_missing_km2": 167.6448,
+        "class_area_km2": {
+          "1": 10549.5489,
+          "2": 6385.9167,
+          "3": 2252.3328,
+          "4": 300.2796,
+          "5": 11.6199
+        }
+      },
+      "TPI": {
+        "assessed_km2": 19499.6979,
+        "excluded_water_snow_or_missing_km2": 167.6448,
+        "class_area_km2": {
+          "1": 7070.3775,
+          "2": 3568.6575,
+          "3": 5158.0971,
+          "4": 2746.9827,
+          "5": 955.5831
+        }
+      },
+      "TRSI": {
+        "assessed_km2": 19499.6979,
+        "excluded_water_snow_or_missing_km2": 167.6448,
+        "class_area_km2": {
+          "1": 12061.1637,
+          "2": 4520.5614,
+          "3": 2123.4195,
+          "4": 688.6098,
+          "5": 105.9435
+        }
+      },
+      "ETSI": {
+        "assessed_km2": 19499.6979,
+        "excluded_water_snow_or_missing_km2": 167.6448,
+        "class_area_km2": {
+          "1": 17051.6628,
+          "2": 2195.5662,
+          "3": 229.6125,
+          "4": 22.797,
+          "5": 0.0594
+        }
+      }
+    }
+  }
+]
