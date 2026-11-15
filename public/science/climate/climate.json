@@ -1,0 +1,21 @@
+{
+ "version": "climate-comfort-0.1",
+ "image": "/science/climate/comfort.webp",
+ "frame": {
+  "width": 782,
+  "height": 514,
+  "west": 55.98632812500001,
+  "south": 37.160316546736766,
+  "east": 73.1689453125,
+  "north": 45.61403741135092
+ },
+ "months": 12,
+ "encoding": {
+  "R": "comfort score*2 (0-200)",
+  "A": "255 inside Uzbekistan",
+  "layout": "months stacked vertically, January on top"
+ },
+ "source": "TerraClimate 1991-2020 monthly normals (Abatzoglou et al. 2018), 1/8 degree subset; elevation from the model-v0.2 inputs",
+ "method": "CCI = 100 TC^0.4 A^0.2 P^0.3 W^0.1 (weighted geometric mean, HCI weights); see analysis/climate/comfort.py and summary.json",
+ "imageFallback": "/science/climate/comfort.png"
+}
