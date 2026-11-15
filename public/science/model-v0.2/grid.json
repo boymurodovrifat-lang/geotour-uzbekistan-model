@@ -1,0 +1,54 @@
+{
+  "crs": "EPSG:6933",
+  "resolution": 1000,
+  "width": 1656,
+  "height": 812,
+  "transform": [
+    1000.0,
+    0.0,
+    5402000.0,
+    0.0,
+    -1000.0,
+    5235000.0
+  ],
+  "bounds": [
+    5402000,
+    4423000,
+    7058000,
+    5235000
+  ],
+  "domain_cells": 443707,
+  "region_names": {
+    "1": "Andijon",
+    "2": "Namangan",
+    "3": "Farg‘ona",
+    "4": "Qoraqalpog‘iston",
+    "5": "Xorazm",
+    "6": "Navoiy",
+    "7": "Surxondaryo",
+    "8": "Samarqand",
+    "9": "Toshkent viloyati",
+    "10": "Sirdaryo",
+    "11": "Jizzax",
+    "12": "Buxoro",
+    "13": "Qashqadaryo",
+    "14": "Toshkent shahri"
+  },
+  "region_ids": {
+    "1": "region-11",
+    "2": "region-10",
+    "3": "region-9",
+    "4": "region-5",
+    "5": "region-4",
+    "6": "region-6",
+    "7": "region-13",
+    "8": "region-2",
+    "9": "region-1",
+    "10": "region-8",
+    "11": "region-7",
+    "12": "region-3",
+    "13": "region-12",
+    "14": "region-0"
+  },
+  "aoi_source": "geoBoundaries UZB-ADM1-4885205 2017; screening AOI, not reviewed for current legal precision"
+}
