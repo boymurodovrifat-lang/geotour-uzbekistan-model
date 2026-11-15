@@ -34,7 +34,7 @@ Each index is a weighted geometric mean on a 0–100 scale. Weights lie midway b
 | `public/transport/` | Simplified OpenStreetMap main roads and metadata |
 | `data/` | World Heritage reference points, routes and photo credits |
 | `paper/figures/` | Figures as used in the manuscript |
-| `app/`, `lib/`, `tests/` | Main source files of the portal (React, Leaflet) and their tests |
+| `app/`, `lib/`, `tests/` | Main source files of the portal (React, Leaflet), including the live weather layer (`app/weather.tsx`, data from Open-Meteo), and their tests |
 
 The portal is a Next.js-style application; only its main source files are included here. Generated files, the UI component library and the earlier 30 m tile pyramids are not.
 
@@ -61,6 +61,7 @@ python analysis/build_routes.py
 | Elevation | Copernicus DEM GLO-90 | Copernicus DEM licence, free with attribution |
 | World Heritage reference points | UNESCO World Heritage Centre web list | see source |
 | Route photographs | Wikimedia Commons, credited per photo in `data/route-photos.json` | per photo |
+| Live weather in the portal | Open-Meteo, requested in the visitor's browser; not stored here | CC BY 4.0 |
 
 The code in this repository is released under the MIT licence (see `LICENSE`). Derived data keep the licences of their sources; files derived from OpenStreetMap remain under ODbL 1.0.
 
@@ -70,6 +71,16 @@ The code in this repository is released under the MIT licence (see `LICENSE`). D
 - The natural group consists almost entirely of named peaks and viewpoints, so ESI does not recognise remote protected areas.
 - Distances are straight-line, not travel time.
 - A dominant land-cover class at 1 km hides small features.
+
+## Authors
+
+Farrux Gulmuradov (Samarkand State Technical University; ORCID 0009-0004-7601-9557), Rifat Boymurodov (Samarkand State University named after Sharof Rashidov; ORCID 0000-0002-7459-2710), Ismoil Omonov, Muhriddin Qalandarov, Bekzod Tursunov, Asliddin Po‘latov and Nurali Umarov (Samarkand State Technical University).
+
+Contact: Rifat Boymurodov, boymurodovrifat@gmail.com
+
+## How to cite
+
+Gulmuradov, F.; Boymurodov, R.; Omonov, I.; Qalandarov, M.; Tursunov, B.; Po‘latov, A.; Umarov, N. An open, reproducible geoportal for screening tourism and ecotourism suitability in Uzbekistan. Manuscript under preparation, 2026. Code and data: https://github.com/boymurodovrifat-lang/geotour-uzbekistan-model
 
 ## Acknowledgement
 
