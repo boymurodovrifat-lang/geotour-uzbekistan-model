@@ -1,0 +1,366 @@
+{
+ "method": "Sobol first-order (Saltelli et al. 2010) and total (Jansen 1999) indices, pooled over cells",
+ "base_samples": 2048,
+ "model_runs": 18432,
+ "cells_sampled": 3000,
+ "seed": 20261116,
+ "groups": {
+  "share": "Weighting rule (equal ↔ entropy)",
+  "resource": "Resource half-distance",
+  "service": "Service half-distance",
+  "recreation": "Recreation half-distance",
+  "kernel": "Count-kernel half-distance",
+  "saturation": "Saturation constant of K",
+  "jitter": "Weight jitter (±10%)"
+ },
+ "indices": {
+  "ESI": {
+   "share": {
+    "first": 0.048,
+    "total": 0.074,
+    "first_ci95": [
+     0.028,
+     0.071
+    ],
+    "total_ci95": [
+     0.07,
+     0.079
+    ]
+   },
+   "resource": {
+    "first": 0.774,
+    "total": 0.933,
+    "first_ci95": [
+     0.637,
+     0.915
+    ],
+    "total_ci95": [
+     0.894,
+     0.976
+    ]
+   },
+   "service": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "recreation": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "kernel": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "saturation": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "jitter": {
+    "first": 0.0,
+    "total": 0.002,
+    "first_ci95": [
+     -0.004,
+     0.004
+    ],
+    "total_ci95": [
+     0.002,
+     0.003
+    ]
+   },
+   "sum_first": 0.822
+  },
+  "TSI": {
+   "share": {
+    "first": 0.04,
+    "total": 0.046,
+    "first_ci95": [
+     0.01,
+     0.07
+    ],
+    "total_ci95": [
+     0.044,
+     0.049
+    ]
+   },
+   "resource": {
+    "first": 0.059,
+    "total": 0.109,
+    "first_ci95": [
+     0.019,
+     0.102
+    ],
+    "total_ci95": [
+     0.1,
+     0.118
+    ]
+   },
+   "service": {
+    "first": 0.884,
+    "total": 0.843,
+    "first_ci95": [
+     0.745,
+     1.021
+    ],
+    "total_ci95": [
+     0.798,
+     0.887
+    ]
+   },
+   "recreation": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "kernel": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "saturation": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "jitter": {
+    "first": -0.001,
+    "total": 0.003,
+    "first_ci95": [
+     -0.01,
+     0.006
+    ],
+    "total_ci95": [
+     0.003,
+     0.004
+    ]
+   },
+   "sum_first": 0.981
+  },
+  "TPI": {
+   "share": {
+    "first": 0.025,
+    "total": 0.044,
+    "first_ci95": [
+     0.001,
+     0.049
+    ],
+    "total_ci95": [
+     0.041,
+     0.047
+    ]
+   },
+   "resource": {
+    "first": 0.026,
+    "total": 0.067,
+    "first_ci95": [
+     0.002,
+     0.054
+    ],
+    "total_ci95": [
+     0.061,
+     0.071
+    ]
+   },
+   "service": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "recreation": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "kernel": {
+    "first": 0.812,
+    "total": 0.839,
+    "first_ci95": [
+     0.686,
+     0.945
+    ],
+    "total_ci95": [
+     0.794,
+     0.881
+    ]
+   },
+   "saturation": {
+    "first": 0.067,
+    "total": 0.11,
+    "first_ci95": [
+     0.027,
+     0.122
+    ],
+    "total_ci95": [
+     0.103,
+     0.117
+    ]
+   },
+   "jitter": {
+    "first": 0.001,
+    "total": 0.001,
+    "first_ci95": [
+     -0.004,
+     0.005
+    ],
+    "total_ci95": [
+     0.001,
+     0.002
+    ]
+   },
+   "sum_first": 0.931
+  },
+  "TRSI": {
+   "share": {
+    "first": 0.075,
+    "total": 0.108,
+    "first_ci95": [
+     0.044,
+     0.111
+    ],
+    "total_ci95": [
+     0.101,
+     0.115
+    ]
+   },
+   "resource": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "service": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "recreation": {
+    "first": 0.872,
+    "total": 0.879,
+    "first_ci95": [
+     0.772,
+     1.006
+    ],
+    "total_ci95": [
+     0.837,
+     0.922
+    ]
+   },
+   "kernel": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "saturation": {
+    "first": 0.0,
+    "total": 0.0,
+    "first_ci95": [
+     0.0,
+     0.0
+    ],
+    "total_ci95": [
+     0.0,
+     0.0
+    ]
+   },
+   "jitter": {
+    "first": 0.003,
+    "total": 0.006,
+    "first_ci95": [
+     -0.006,
+     0.012
+    ],
+    "total_ci95": [
+     0.006,
+     0.007
+    ]
+   },
+   "sum_first": 0.951
+  }
+ }
+}
