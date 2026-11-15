@@ -152,21 +152,22 @@ const texts = {
 export const indexNote = (lang: IndexLang) => texts[lang].note;
 export const indexClassNames = (lang: IndexLang) => texts[lang].classes;
 
-type Layer = ImageFrame & {
+export type Layer = ImageFrame & {
   id: string;
   imageUrl: string;
+  imageFallbackUrl?: string;
   criteria: string[];
   weights: Record<string, number>;
   statistics: { mean: number; class_share_pct: Record<string, number> };
   monteCarlo: { mean_class_stability_pct: number };
   scoreUrl: string;
 };
-type RegionRow = { id: string; name: string; assessed_km2: number; [index: string]: any };
-type Catalog = { layers: Layer[]; regions: RegionRow[] };
-type Raw = { data: Uint8ClampedArray; frame: ImageFrame };
+export type RegionRow = { id: string; name: string; assessed_km2: number; [index: string]: any };
+export type Catalog = { layers: Layer[]; regions: RegionRow[] };
+export type Raw = { data: Uint8ClampedArray; frame: ImageFrame };
 
 const rawCache = new Map<string, Promise<Raw>>();
-function loadRaw(layer: Layer): Promise<Raw> {
+export function loadRaw(layer: Layer): Promise<Raw> {
   let job = rawCache.get(layer.id);
   if (!job) {
     job = new Promise<Raw>((resolve, reject) => {
@@ -183,7 +184,11 @@ function loadRaw(layer: Layer): Promise<Raw> {
           reject(error);
         }
       };
-      img.onerror = () => reject(new Error('index image'));
+      // Lossless WebP first; the archival PNG holds the same values if a browser cannot decode WebP.
+      img.onerror = () => {
+        if (layer.imageFallbackUrl && !img.src.endsWith(layer.imageFallbackUrl)) img.src = layer.imageFallbackUrl;
+        else reject(new Error('index image'));
+      };
       img.src = layer.imageUrl;
     });
     job.catch(() => rawCache.delete(layer.id));
@@ -193,7 +198,7 @@ function loadRaw(layer: Layer): Promise<Raw> {
 }
 
 // Draws one index into a canvas, optionally clipped to a region polygon.
-function paint(canvas: HTMLCanvasElement, raw: Raw, index: string, mode: DisplayMode, dim: boolean, feature: any) {
+export function paint(canvas: HTMLCanvasElement, raw: Raw, index: string, mode: DisplayMode, dim: boolean, feature: any) {
   const { width, height } = raw.frame;
   if (canvas.width !== width || canvas.height !== height) {
     canvas.width = width;
@@ -222,7 +227,7 @@ function paint(canvas: HTMLCanvasElement, raw: Raw, index: string, mode: Display
   ctx.globalCompositeOperation = 'source-over';
 }
 
-function canvasOverlay(L: any, canvas: HTMLCanvasElement, frame: ImageFrame, pane: string, opacity: number) {
+export function canvasOverlay(L: any, canvas: HTMLCanvasElement, frame: ImageFrame, pane: string, opacity: number) {
   // Leaflet's image overlay, with a canvas as its element.
   const Overlay = L.ImageOverlay.extend({
     _initImage(this: any) {

@@ -49,6 +49,7 @@ import { clusterPoints, formatCoordinate, parseCoordinates, toCsv, toGeoJson } f
 import { addCountryFrame } from './map-frame';
 import { useTransport } from './transport';
 import { useWeatherLayer, WeatherCard } from './weather';
+import { useClimateLayer, ClimateMonthBar, ClimateStrip, CLIMATE_RAMP } from './climate';
 import { useIndexLayer, IndexHeader, IndexLegend, IndexControls, IndexSwipe, IndexRegionPanel, indexSummaries, indexNote as indexNoteText } from './index-layer';
 import { MapStatus, MapContextMenu, MeasureBar, useMeasure, copyText, downloadFile } from './gp-tools';
 import {
@@ -71,7 +72,7 @@ const insideCountry = (p: { lat: number; lng: number }) => countryFilters.some((
 const labels={uz:{indices:'Indekslar',indexTitle:'Turizm indekslari',indexIntro:'Besh mustaqil yo‘nalish bo‘yicha baholash.',indexNote:'Xaritada 30 m v0.3 dastlabki hisobi. Yangi v1.0 formulalari bo‘yicha milliy qatlamlar hali hisoblanmagan. Yuqori sinf tashrif ruxsati yoki shahar reytingi emas.',indexLink:'Yangi v1.0 formulasi',mapMethod:'Xaritadagi v0.3 metodikasi',explore:'Manzillar',places:'Obyektlar',trips:'Marshrutlar',title:'O‘zbekistonni kashf eting',intro:'Madaniy meros, shaharlar va tog‘lar. Sayohatingizni manzildan boshlang.',search:'Nom bo‘yicha qidirish',all:'Barcha turlar',culture:'Madaniy meros va muzeylar',sight:'Diqqatga sazovor joylar',nature:'Tabiat va manzara',stay:'Turar joy',food:'Ovqatlanish',money:'Bank va bankomat',health:'Tibbiy yordam',fuel:'Yoqilg‘i',transport:'Transport',info:'Axborot markazi',map:'Xarita',settings:'Xarita qatlamlari',roads:'Asosiy yo‘llar',trails:'OSM marshrut va so‘qmoqlar',close:'Yopish',source:'Manba',unknown:'Ma’lumot taqdim etilmagan',contact:'Kontakt',address:'Manzil',hours:'Ish vaqti',price:'Narx',imageMissing:'Tasdiqlangan rasm mavjud emas',directions:'Xaritada yo‘l izlash',official:'Rasmiy manba',heritage:'Madaniy meros',season:'Tavsiya etilgan mavsum',days:'kun',plan:'Tahririy sayohat rejasi',planNote:'Bu sayohat g‘oyasi, tasdiqlangan transport yo‘li emas. Kunlar rejalashtirish uchun taxmin. Yo‘l vaqti, bron va kirish ruxsatlarini alohida tekshiring.',noRank:'Manzillar reyting qilinmaydi. Viloyatning cho‘l maydoni shaharning turistik ahamiyatini pasaytirmaydi.',research:'Indekslar va metodika (UZ)',method:'Metodika (UZ)',more:'Ko‘proq ko‘rsatish',none:'Mos obyekt topilmadi',poiNote:'OSM ma’lumotlari tozalangan va guruhlangan. Xizmatlar 8 manzilning 40 km atrofini qamraydi. Qayd etilganlik xizmat sifati yoki hozir ochiqligini tasdiqlamaydi.',rules:'Kirish qoidalari',rulesNote:'Muhofaza hududida ruxsat, mavsumiy cheklov va xizmatlarni tashrifdan oldin operator yoki rasmiy manbadan aniqlang.',stops:'Bekatlar',open:'Tafsilotlar',website:'Veb-sayt',photo:'Surat',loading:'Ma’lumotlar yuklanmoqda…'},en:{indices:'Indices',indexTitle:'Tourism indices',indexIntro:'Five independent approaches to assessment.',indexNote:'The map displays preliminary 30 m v0.3 calculations. National layers using the new v1.0 formulas are not yet calculated. A high class is not access permission or a city ranking.',indexLink:'New v1.0 formula (UZ)',mapMethod:'Map v0.3 methodology (UZ)',explore:'Destinations',places:'Places & services',trips:'Routes',title:'Discover Uzbekistan',intro:'Living heritage, cities and mountains. Start with a destination.',search:'Search by name',all:'All categories',culture:'Heritage & museums',sight:'Sights',nature:'Nature & viewpoints',stay:'Accommodation',food:'Food & drink',money:'Banks & ATMs',health:'Healthcare',fuel:'Fuel',transport:'Transport',info:'Visitor information',map:'Map',settings:'Map layers',roads:'Main roads',trails:'OSM routes & trail segments',close:'Close',source:'Source',unknown:'Information not provided',contact:'Contact',address:'Address',hours:'Opening hours',price:'Price',imageMissing:'No verified photograph available',directions:'Find directions on map',official:'Official source',heritage:'Cultural heritage',season:'Suggested season',days:'days',plan:'Editorial trip idea',planNote:'A trip idea, not a verified transport route. Days are planning estimates. Check travel times, bookings and access separately.',noRank:'Destinations are not ranked. A province’s desert area does not reduce a city’s tourism significance.',research:'Indices & methodology (UZ)',method:'Methodology (UZ)',more:'Show more',none:'No matching places',poiNote:'OSM records are cleaned and grouped. Services cover a 40 km radius around eight destinations. A mapped service does not guarantee quality or current availability.',rules:'Access rules',rulesNote:'For protected areas, confirm permits, seasonal restrictions and services with the operator or official source before visiting.',stops:'Stops',open:'Details',website:'Website',photo:'Photo',loading:'Loading places…'},ru:{indices:'Индексы',indexTitle:'Индексы туризма',indexIntro:'Пять самостоятельных направлений оценки.',indexNote:'На карте предварительный расчёт v0.3 с шагом 30 м. Национальные слои по новым формулам v1.0 ещё не рассчитаны. Высокий класс не означает разрешение на посещение или рейтинг города.',indexLink:'Новая формула v1.0 (UZ)',mapMethod:'Методика карты v0.3 (UZ)',explore:'Направления',places:'Места и услуги',trips:'Маршруты',title:'Откройте Узбекистан',intro:'Культурное наследие, города и горы. Начните с направления.',search:'Поиск по названию',all:'Все категории',culture:'Наследие и музеи',sight:'Достопримечательности',nature:'Природа и виды',stay:'Проживание',food:'Еда и напитки',money:'Банки и банкоматы',health:'Медицина',fuel:'Топливо',transport:'Транспорт',info:'Туристическая информация',map:'Карта',settings:'Слои карты',roads:'Основные дороги',trails:'Маршруты и участки троп OSM',close:'Закрыть',source:'Источник',unknown:'Информация не предоставлена',contact:'Контакты',address:'Адрес',hours:'Часы работы',price:'Стоимость',imageMissing:'Проверенное фото отсутствует',directions:'Найти дорогу на карте',official:'Официальный источник',heritage:'Культурное наследие',season:'Рекомендуемый сезон',days:'дней',plan:'Редакционная идея поездки',planNote:'Идея поездки, а не проверенный транспортный маршрут. Дни — ориентир для планирования. Время в пути, бронирование и разрешения уточняйте отдельно.',noRank:'Направления не ранжируются. Площадь пустыни в области не уменьшает туристическое значение города.',research:'Индексы и методика (UZ)',method:'Методика (UZ)',more:'Показать ещё',none:'Места не найдены',poiNote:'Записи OSM очищены и сгруппированы. Услуги охватывают радиус 40 км вокруг восьми направлений. Наличие на карте не гарантирует качество или доступность услуги.',rules:'Правила посещения',rulesNote:'Перед посещением охраняемой территории уточните разрешения, сезонные ограничения и услуги у оператора или в официальном источнике.',stops:'Остановки',open:'Подробнее',website:'Сайт',photo:'Фото',loading:'Загрузка данных…'}};
 type Lang = keyof typeof labels;
 type Panel = 'layers' | 'indices' | 'explore' | 'places' | 'trips' | 'legend' | 'about' | null;
-const FIXED_LAYERS = ['index', 'dest', 'borders', 'roads', 'routes', 'weather'];
+const FIXED_LAYERS = ['index', 'dest', 'borders', 'roads', 'routes', 'weather', 'climate'];
 const PIN_ICON =
   '<svg viewBox="0 0 24 32" width="28" height="38" aria-hidden="true"><path d="M12 0C5.4 0 0 5.3 0 11.8 0 20.6 12 32 12 32s12-11.4 12-20.2C24 5.3 18.6 0 12 0z" fill="#c2410c" stroke="#fff" stroke-width="1.5"/><circle cx="12" cy="11.5" r="4.5" fill="#fff"/></svg>';
 const placeKey = (p: any) => (p.isPin ? 'pin:' + Number(p.lat).toFixed(5) + ',' + Number(p.lng).toFixed(5) : String(p.id || (p.osmType || 'node') + '-' + p.osmId));
@@ -98,6 +99,8 @@ export default function Tourist() {
     [roadsOn, setRoadsOn] = useState(false),
     [routesOn, setRoutesOn] = useState(false),
     [weatherOn, setWeatherOn] = useState(false),
+    [climateOn, setClimateOn] = useState(false),
+    [climateMonth, setClimateMonth] = useState(() => new Date().getMonth()),
     [query, setQuery] = useState(''),
     [category, setCategory] = useState(''),
     [placesMode, setPlacesMode] = useState<'all' | 'saved'>('all'),
@@ -173,8 +176,10 @@ export default function Tourist() {
       setRoadsOn(link.layers.includes('roads'));
       setRoutesOn(link.layers.includes('routes'));
       setWeatherOn(link.layers.includes('weather'));
+      setClimateOn(link.layers.includes('climate'));
       setPoiOn(link.layers.filter((l) => (POI_LAYERS as readonly string[]).includes(l)));
     }
+    if (link.month !== undefined) setClimateMonth(link.month);
     const linkedRoute = (routes as any[]).find((r) => r.id === link.route);
     if (linkedRoute) setTrip(linkedRoute);
     if (linkedRoute && !link.view) frameRoute.current = linkedRoute;
@@ -310,6 +315,7 @@ export default function Tourist() {
   const indexMap = useIndexLayer(mapRef, mapReady, indexOn, lang);
   const inIndexRegion = useMemo(() => regionPointFilter(indexMap.feature), [indexMap.feature]);
   const weather = useWeatherLayer(mapRef, mapReady, weatherOn, lang);
+  const climate = useClimateLayer(mapRef, mapReady, climateOn, climateMonth);
   const transport = useTransport(mapRef, mapReady && (roadsOn || routesOn), indexMap.region, lang);
   const measure = useMeasure(mapRef, mapReady, lang);
   useEffect(() => {
@@ -360,8 +366,9 @@ export default function Tourist() {
     else if (selected?.id) q.set('sel', ((destinations as any[]).some((d) => d.id === selected.id) ? 'd:' : 'p:') + selected.id);
     else if (pendingSel) q.set('sel', 'p:' + pendingSel);
     if (trip) q.set('route', trip.id);
+    if (climateOn) q.set('cm', String(climateMonth + 1));
     window.history.replaceState(null, '', '?' + q.toString());
-  }, [hydrated, lang, theme, bg, indexOn, indexMap.index, indexMap.opacity, indexMap.region, bordersOn, destOn, poiOn, roadsOn, routesOn, weatherOn, view, selected, pendingSel, trip]);
+  }, [hydrated, lang, theme, bg, indexOn, indexMap.index, indexMap.opacity, indexMap.region, bordersOn, destOn, poiOn, roadsOn, routesOn, weatherOn, climateOn, climateMonth, view, selected, pendingSel, trip]);
 
   // Places and services load lazily, only when a place layer, the list or a shared place needs them.
   const needServices = poiOn.length > 0 || panel === 'places' || !!pendingSel || globalQuery.trim().length >= 2;
@@ -451,7 +458,9 @@ export default function Tourist() {
               ? routesOn
               : id === 'weather'
                 ? weatherOn
-                : poiOn.includes(id);
+                : id === 'climate'
+                  ? climateOn
+                  : poiOn.includes(id);
   const setOn = (id: string, on: boolean) => {
     setTheme('');
     if (id === 'index') setIndexOn(on);
@@ -460,6 +469,7 @@ export default function Tourist() {
     else if (id === 'roads') setRoadsOn(on);
     else if (id === 'routes') setRoutesOn(on);
     else if (id === 'weather') setWeatherOn(on);
+    else if (id === 'climate') setClimateOn(on);
     else setPoiOn((v) => (on ? [...new Set([...v, id])] : v.filter((p) => p !== id)));
   };
   const activeLayers = [...FIXED_LAYERS.filter(isOn), ...POI_LAYERS.filter((p) => poiOn.includes(p))];
@@ -484,6 +494,7 @@ export default function Tourist() {
     setRoadsOn(false);
     setRoutesOn(false);
     setWeatherOn(false);
+    setClimateOn(false);
     setPoiOn([]);
   };
   const layerName = (id: string) =>
@@ -499,7 +510,9 @@ export default function Tourist() {
               ? t.trails
               : id === 'weather'
                 ? g.weatherLayer
-                : (t as any)[id];
+                : id === 'climate'
+                  ? g.climateLayer
+                  : (t as any)[id];
   const swatch = (id: string) =>
     id === 'index' ? (
       <i className="gp-swatch ramp" style={{ background: 'linear-gradient(90deg,' + (INDEX_RAMPS[indexMap.index] || INDEX_RAMPS.ESI).join(',') + ')' }} />
@@ -511,6 +524,8 @@ export default function Tourist() {
       <i className="gp-swatch line dashed" />
     ) : id === 'weather' ? (
       <i className="gp-swatch wx">°</i>
+    ) : id === 'climate' ? (
+      <i className="gp-swatch ramp" style={{ background: 'linear-gradient(90deg,' + CLIMATE_RAMP.join(',') + ')' }} />
     ) : (
       <i className="gp-swatch" style={{ background: id === 'dest' ? '#176b61' : POI_COLORS[id] }} />
     );
@@ -958,6 +973,10 @@ export default function Tourist() {
           )}
         </div>
         <nav className="gp-header-right">
+          <a className="gp-story-link" href={'/story?lang=' + lang}>
+            <BookOpen size={16} />
+            <span>{g.story}</span>
+          </a>
           <div className="gp-lang" role="group" aria-label="Language / Til / Язык">
             {(['uz', 'en', 'ru'] as const).map((k) => (
               <button key={k} aria-pressed={lang === k} lang={k} title={k === 'uz' ? 'O‘zbekcha' : k === 'en' ? 'English' : 'Русский'} onClick={() => setLang(k)}>
@@ -1198,6 +1217,10 @@ export default function Tourist() {
               )}
               {panel === 'trips' && (
                 <>
+                  <a className="gp-story-card" href={'/story?lang=' + lang}>
+                    <b>{g.story}</b>
+                    <span>{lang === 'uz' ? 'Xiva, Buxoro, Nurota, Samarqand, Shahrisabz va Toshkent bo‘ylab xarita bilan birga o‘qiladigan hikoya.' : lang === 'en' ? 'Khiva to Tashkent as a scrolling story: the map follows the text.' : 'От Хивы до Ташкента: карта следует за текстом.'}</span>
+                  </a>
                   <div className="gp-seg wide gp-route-filter" role="group" aria-label={x.routeThemesLabel}>
                     {['all', ...Object.keys(x.routeThemes)].map((id) => (
                       <button key={id} aria-pressed={routeFilter === id} onClick={() => setRouteFilter(id)}>
@@ -1304,6 +1327,14 @@ export default function Tourist() {
                   <p>{g.aboutText}</p>
                   <p className="travel-note">{t.noRank}</p>
                   <h3>{g.links}</h3>
+                  <a href={'/story?lang=' + lang}>
+                    {g.story}
+                    <ExternalLink size={13} />
+                  </a>
+                  <a href="/science/climate/METHOD_UZ.md" target="_blank" rel="noreferrer">
+                    {g.climateLayer} · {t.source}
+                    <ExternalLink size={13} />
+                  </a>
                   <a href="/science/model-v0.4/METHOD_UZ.md" target="_blank" rel="noreferrer">
                     {lang === 'uz' ? 'Indekslar usuli (v0.4)' : lang === 'en' ? 'Index method note, v0.4 (UZ)' : 'Методика индексов v0.4 (UZ)'}
                     <ExternalLink size={13} />
@@ -1383,6 +1414,13 @@ export default function Tourist() {
             onCopied={() => setToast(x.coordsCopied)}
           />
           <MeasureBar state={measure} lang={lang} closeLabel={t.close} clearLabel={g.clear} />
+          {climateOn && climate.status === 'ready' && <ClimateMonthBar month={climateMonth} setMonth={setClimateMonth} lang={lang} />}
+          {!error && climateOn && climate.status === 'failed' && (
+            <div className="gp-banner" role="alert">
+              <CircleAlert size={16} />
+              <span>{lang === 'uz' ? 'Iqlim qatlami yuklanmadi.' : lang === 'en' ? 'The climate layer could not be loaded.' : 'Не удалось загрузить климатический слой.'}</span>
+            </div>
+          )}
           {!error && weatherOn && weather.status === 'failed' && (
             <div className="gp-banner" role="alert">
               <CircleAlert size={16} />
@@ -1523,6 +1561,7 @@ export default function Tourist() {
                       </p>
                     )}
                     {Number.isFinite(sel.lat) && Number.isFinite(sel.lng) && <WeatherCard lat={sel.lat} lng={sel.lng} lang={lang} />}
+                    {Number.isFinite(sel.lat) && Number.isFinite(sel.lng) && <ClimateStrip lat={sel.lat} lng={sel.lng} lang={lang} />}
                     {sel.coordinateSource?.startsWith('approx') && <p className="gp-detail-hint">{x.approxCoord}</p>}
                     {sel.routeId && trip && (
                       <div className="gp-pager">
@@ -1640,7 +1679,14 @@ export default function Tourist() {
         </section>
       </main>
 
-      <nav className="gp-toolbar" aria-label={g.tools}>
+      <nav
+        className="gp-toolbar"
+        aria-label={g.tools}
+        onScroll={(e) => {
+          const el = e.currentTarget;
+          el.classList.toggle('at-end', el.scrollLeft + el.clientWidth >= el.scrollWidth - 4);
+        }}
+      >
         {(
           [
             ['layers', g.layers, <Layers size={19} key="i" />],
@@ -1672,7 +1718,7 @@ export default function Tourist() {
           <Share2 size={19} />
           <span>{g.share}</span>
         </button>
-        <button className="gp-tool" onClick={() => window.print()}>
+        <button className="gp-tool gp-tool-print" onClick={() => window.print()}>
           <Printer size={19} />
           <span>{g.print}</span>
         </button>

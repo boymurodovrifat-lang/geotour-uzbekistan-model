@@ -77,7 +77,7 @@ export type ThemeId = keyof typeof THEMES;
 // Catalogue groups, in the order shown in the panel. 'index' is rendered specially.
 export const CATALOG: { id: string; items: string[] }[] = [
   { id: 'gIndex', items: ['index'] },
-  { id: 'gWeather', items: ['weather'] },
+  { id: 'gWeather', items: ['weather', 'climate'] },
   { id: 'gDest', items: ['dest', 'culture', 'sight'] },
   { id: 'gNature', items: ['nature'] },
   { id: 'gTrails', items: ['routes'] },
@@ -98,8 +98,10 @@ export const ui = {
     gDest: 'Manzillar va meros',
     gNature: 'Tabiat',
     gTrails: 'Piyoda yo‘laklar va so‘qmoqlar',
-    gWeather: 'Ob-havo',
+    gWeather: 'Ob-havo va iqlim',
     weatherLayer: 'Ob-havo hozir (shaharlar)',
+    climateLayer: 'Qachon borish kerak (iqlim qulayligi)',
+    story: 'Hikoya xaritasi',
     gServices: 'Turistik xizmatlar',
     gSafety: 'Salomatlik va yo‘l',
     gTransport: 'Transport va marshrutlar',
@@ -151,8 +153,10 @@ export const ui = {
     gDest: 'Destinations & heritage',
     gNature: 'Nature',
     gTrails: 'Hiking paths and trails',
-    gWeather: 'Weather',
+    gWeather: 'Weather and climate',
     weatherLayer: 'Weather now (cities)',
+    climateLayer: 'When to go (climate comfort)',
+    story: 'Story map',
     gServices: 'Visitor services',
     gSafety: 'Health & road',
     gTransport: 'Transport & routes',
@@ -204,8 +208,10 @@ export const ui = {
     gDest: 'Направления и наследие',
     gNature: 'Природа',
     gTrails: 'Пешие маршруты и тропы',
-    gWeather: 'Погода',
+    gWeather: 'Погода и климат',
     weatherLayer: 'Погода сейчас (города)',
+    climateLayer: 'Когда ехать (климатический комфорт)',
+    story: 'Карта-история',
     gServices: 'Туристические услуги',
     gSafety: 'Здоровье и дорога',
     gTransport: 'Транспорт и маршруты',
@@ -261,6 +267,7 @@ export type Permalink = {
   pin?: { lat: number; lng: number };
   sel?: string;
   route?: string;
+  month?: number;
 };
 export function readPermalink(search: string): Permalink {
   const q = new URLSearchParams(search),
@@ -287,11 +294,13 @@ export function readPermalink(search: string): Permalink {
   if (sel && /^[\w:.\-/]{1,80}$/.test(sel)) out.sel = sel;
   const route = q.get('route');
   if (route && /^[\w-]{1,60}$/.test(route)) out.route = route;
+  const cm = Number(q.get('cm'));
+  if (Number.isInteger(cm) && cm >= 1 && cm <= 12) out.month = cm - 1;
   return out;
 }
 
 // Where each catalogue layer comes from. Shown behind the "i" button.
-export const LAYER_SOURCE: Record<string, { kind: 'index' | 'dest' | 'osm' | 'services' | 'stay' | 'lines' | 'borders' | 'weather'; url: string }> = {
+export const LAYER_SOURCE: Record<string, { kind: 'index' | 'dest' | 'osm' | 'services' | 'stay' | 'lines' | 'borders' | 'weather' | 'climate'; url: string }> = {
   index: { kind: 'index', url: '/science/model-v0.4/METHOD_UZ.md' },
   dest: { kind: 'dest', url: '/tourism/CONTENT_METHOD.md' },
   culture: { kind: 'osm', url: 'https://www.openstreetmap.org/copyright' },
@@ -307,6 +316,7 @@ export const LAYER_SOURCE: Record<string, { kind: 'index' | 'dest' | 'osm' | 'se
   roads: { kind: 'lines', url: '/transport/metadata.json' },
   routes: { kind: 'lines', url: '/transport/metadata.json' },
   weather: { kind: 'weather', url: 'https://open-meteo.com/' },
+  climate: { kind: 'climate', url: '/science/climate/METHOD_UZ.md' },
   borders: { kind: 'borders', url: '/boundaries/metadata.json' },
 };
 
@@ -373,6 +383,7 @@ export const pro = {
       stay: 'OpenStreetMap’dagi mehmonxona, hostel va boshqa turar joylar. Narx va bandlik tasdiqlanmagan. Litsenziya: ODbL 1.0.',
       lines: 'OpenStreetMap’dan olingan, soddalashtirilgan asosiy yo‘llar va marshrutlar. Navigatsiya uchun mo‘ljallanmagan. Litsenziya: ODbL 1.0.',
       weather: 'Open-Meteo ochiq xizmatidan olingan joriy ob-havo va 5 kunlik prognoz. Har 15 daqiqada yangilanadi. Bu model prognozi, rasmiy ogohlantirish emas. Litsenziya: CC BY 4.0.',
+      climate: 'Har oy uchun ochiq havoda sayr qilish qulayligi (0–100): kunduzgi seziladigan harorat, yog‘in, quyosh radiatsiyasi va shamol. TerraClimate 1991–2020 oylik normalari, ~2 km pikselda ko‘rsatilgan (asl ma’lumot 1/8°). Bu o‘rtacha iqlim, prognoz emas.',
       borders: 'Viloyat chegaralari: geoBoundaries (OpenStreetMap asosida), 14 hudud. Rasmiy chegara hujjati emas.',
     },
   },
@@ -437,6 +448,7 @@ export const pro = {
       stay: 'Hotels, hostels and other accommodation mapped in OpenStreetMap. Prices and availability are not verified. Licence: ODbL 1.0.',
       lines: 'Simplified main roads and routes from OpenStreetMap. Not for navigation. Licence: ODbL 1.0.',
       weather: 'Current weather and a 5-day forecast from the open Open-Meteo service, refreshed every 15 minutes. A model forecast, not an official warning. Licence: CC BY 4.0.',
+      climate: 'Monthly comfort for outdoor sightseeing (0–100) from daytime apparent temperature, precipitation, solar radiation and wind. TerraClimate 1991–2020 monthly normals, shown on ~2 km pixels (source data 1/8°). Average climate, not a forecast.',
       borders: 'Region boundaries: geoBoundaries (based on OpenStreetMap), 14 units. Not an official boundary record.',
     },
   },
@@ -501,6 +513,7 @@ export const pro = {
       stay: 'Гостиницы, хостелы и другое жильё из OpenStreetMap. Цены и наличие мест не проверены. Лицензия: ODbL 1.0.',
       lines: 'Упрощённые основные дороги и маршруты из OpenStreetMap. Не для навигации. Лицензия: ODbL 1.0.',
       weather: 'Текущая погода и прогноз на 5 дней из открытого сервиса Open-Meteo, обновляется каждые 15 минут. Это модельный прогноз, а не официальное предупреждение. Лицензия: CC BY 4.0.',
+      climate: 'Комфорт для экскурсий на открытом воздухе по месяцам (0–100): дневная ощущаемая температура, осадки, солнечная радиация и ветер. Месячные нормы TerraClimate 1991–2020, пиксели ~2 км (исходные данные 1/8°). Средний климат, не прогноз.',
       borders: 'Границы областей: geoBoundaries (на основе OpenStreetMap), 14 единиц. Не является официальным документом о границах.',
     },
   },
