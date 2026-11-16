@@ -2,11 +2,11 @@
 
 Open geoportal and screening model for tourism, ecotourism and recreation opportunity in Uzbekistan.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24276301.svg)](https://doi.org/10.5281/zenodo.24276301)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24276300.svg)](https://doi.org/10.5281/zenodo.24276300)
 
 Live portal: https://geotour-uzbekistan.uz
 
-Archived release: v1.0.0, https://doi.org/10.5281/zenodo.24276301 (all versions: https://doi.org/10.5281/zenodo.24276300)
+Archived at Zenodo: all versions, https://doi.org/10.5281/zenodo.24276300 (this DOI always resolves to the latest release); v1.0.0, https://doi.org/10.5281/zenodo.24276301.
 
 This repository holds the analysis code, the 1 km input rasters, the results and the main source files of the portal, so that every number shown in the portal can be recomputed.
 
@@ -35,6 +35,9 @@ Each index is a weighted geometric mean on a 0–100 scale. Weights lie midway b
 | `analysis/model_v04/sobol.py`, `network_test.py` | Sobol variance decomposition; road-network instead of straight-line distance |
 | `analysis/validation/official_stats.py` | Regional check against official accommodation statistics (stat.uz, 2024), controlled for population density |
 | `analysis/protected/` | OpenStreetMap protected areas (Geofabrik, 15 Nov 2026) and the ESI sensitivity test |
+| `analysis/validation/osm_currency.py` | How current the OpenStreetMap point extract is, against the Geofabrik extract of 15 Nov 2026 (`osm-currency.json`) |
+| `analysis/validation/commons_photos.py` | Independent test with 31,219 geotagged Wikimedia Commons photographs (photo-user-days): where and when photographs are taken (`commons-photo-test.json`, `paper/figures/fig_photos.png`) |
+| `data/commons_photos_uz_2026-11-16.json` | Metadata of the geotagged Commons files used by the photo test: page id, latitude, longitude, uploader, upload date, date taken (collected 16 Nov 2026) |
 | `analysis/climate/` | TerraClimate 1991–2020 monthly normals and the monthly climate comfort index ("When to go") |
 | `analysis/portal/` | Lossless WebP publishing step, story-map probe values, load-performance measurement |
 | `public/science/model-v0.2/` | Grid definition, audited point table and 1 km input rasters |
@@ -72,15 +75,17 @@ python analysis/build_routes.py
 | Route photographs | Wikimedia Commons, credited per photo in `data/route-photos.json` | per photo |
 | Monthly climate normals | TerraClimate (Abatzoglou et al. 2018), 1991–2020 | CC0 1.0 |
 | Regional accommodation and population | Statistics Committee / Statistics Agency of Uzbekistan, public releases | public statistics |
+| Geotagged photograph metadata (photo test only) | Wikimedia Commons API (location, uploader, dates; no images) | Commons files keep their own free licences; metadata collected via the public API |
 | Live weather in the portal | Open-Meteo, requested in the visitor's browser; not stored here | CC BY 4.0 |
 
 The code in this repository is released under the MIT licence (see `LICENSE`). Derived data keep the licences of their sources; files derived from OpenStreetMap remain under ODbL 1.0.
 
 ## Known limits
 
-- OpenStreetMap is incomplete: absence of a point is not absence of a resource. The download date of the point extract is not recorded; it is older than the dated Geofabrik snapshot of 27 October 2026 used for roads and services.
+- OpenStreetMap is incomplete: absence of a point is not absence of a resource. The download date of the point extract is not recorded; it is older than the dated Geofabrik snapshot of 27 October 2026 used for roads and services. Against the data of 15 November 2026, 98.2% of the records used by the indices are unchanged, but 356 named objects of the model's types are missing.
 - The natural group consists almost entirely of named peaks and viewpoints, so ESI does not recognise remote protected areas.
 - Distances are straight-line, not travel time.
+- The geotagged-photo test shows that TSI and TPI concentrate photographed places better than settlement or road proximity at the top of their range, but over the whole country they add little to access alone; ESI and TRSI do worse than these baselines.
 - A dominant land-cover class at 1 km hides small features.
 
 ## Authors
