@@ -28,6 +28,11 @@ Each index is a weighted geometric mean on a 0–100 scale. Weights lie midway b
 | `analysis/model_v04/compute.py` | Criteria, weights, indices, Monte Carlo, external checks, all tables |
 | `analysis/model_v04/figures.py`, `figures_context.py` | Figures 1–6 |
 | `analysis/build_routes.py` | Route lines on the OpenStreetMap main-road network |
+| `analysis/model_v04/sobol.py`, `network_test.py` | Sobol variance decomposition; road-network instead of straight-line distance |
+| `analysis/validation/official_stats.py` | Regional check against official accommodation statistics (stat.uz, 2024), controlled for population density |
+| `analysis/protected/` | OpenStreetMap protected areas (Geofabrik, 15 Nov 2026) and the ESI sensitivity test |
+| `analysis/climate/` | TerraClimate 1991–2020 monthly normals and the monthly climate comfort index ("When to go") |
+| `analysis/portal/` | Lossless WebP publishing step, story-map probe values, load-performance measurement |
 | `public/science/model-v0.2/` | Grid definition, audited point table and 1 km input rasters |
 | `public/science/model-v0.3/regional30.json` | Regional means of the earlier 30 m version, used for comparison |
 | `public/science/model-v0.4/` | Results: scores, class stability, data images for the map, `results.json`, regional statistics |
@@ -61,13 +66,15 @@ python analysis/build_routes.py
 | Elevation | Copernicus DEM GLO-90 | Copernicus DEM licence, free with attribution |
 | World Heritage reference points | UNESCO World Heritage Centre web list | see source |
 | Route photographs | Wikimedia Commons, credited per photo in `data/route-photos.json` | per photo |
+| Monthly climate normals | TerraClimate (Abatzoglou et al. 2018), 1991–2020 | CC0 1.0 |
+| Regional accommodation and population | Statistics Committee / Statistics Agency of Uzbekistan, public releases | public statistics |
 | Live weather in the portal | Open-Meteo, requested in the visitor's browser; not stored here | CC BY 4.0 |
 
 The code in this repository is released under the MIT licence (see `LICENSE`). Derived data keep the licences of their sources; files derived from OpenStreetMap remain under ODbL 1.0.
 
 ## Known limits
 
-- OpenStreetMap is incomplete: absence of a point is not absence of a resource. The download date of the point extract is not recorded.
+- OpenStreetMap is incomplete: absence of a point is not absence of a resource. The download date of the point extract is not recorded; it is older than the dated Geofabrik snapshot of 27 October 2026 used for roads and services.
 - The natural group consists almost entirely of named peaks and viewpoints, so ESI does not recognise remote protected areas.
 - Distances are straight-line, not travel time.
 - A dominant land-cover class at 1 km hides small features.
