@@ -1,0 +1,242 @@
+{
+ "source": "stat.uz, Development of tourism and recreation in Uzbekistan for 2024 (released 12.08.2025)",
+ "n_regions": 14,
+ "tests": [
+  {
+   "index": "TPI",
+   "statistic": "hotel guests per km2",
+   "spearman": 0.705,
+   "p_permutation": 0.006,
+   "partial_spearman_given_population_density": -0.049,
+   "partial_p_permutation": 0.88,
+   "circular": false
+  },
+  {
+   "index": "TPI",
+   "statistic": "specialised-accommodation guests per km2",
+   "spearman": 0.925,
+   "p_permutation": 5e-06,
+   "partial_spearman_given_population_density": 0.788,
+   "partial_p_permutation": 0.001,
+   "circular": false
+  },
+  {
+   "index": "TSI",
+   "statistic": "hotel guests per km2",
+   "spearman": 0.811,
+   "p_permutation": 0.00083,
+   "partial_spearman_given_population_density": 0.221,
+   "partial_p_permutation": 0.49,
+   "circular": true
+  },
+  {
+   "index": "TSI",
+   "statistic": "specialised-accommodation guests per km2",
+   "spearman": 0.908,
+   "p_permutation": 3e-05,
+   "partial_spearman_given_population_density": 0.725,
+   "partial_p_permutation": 0.0011,
+   "circular": false
+  },
+  {
+   "index": "ESI",
+   "statistic": "hotel guests per km2",
+   "spearman": 0.152,
+   "p_permutation": 0.61,
+   "partial_spearman_given_population_density": -0.075,
+   "partial_p_permutation": 0.8,
+   "circular": false
+  },
+  {
+   "index": "ESI",
+   "statistic": "specialised-accommodation guests per km2",
+   "spearman": 0.556,
+   "p_permutation": 0.042,
+   "partial_spearman_given_population_density": 0.651,
+   "partial_p_permutation": 0.019,
+   "circular": false
+  },
+  {
+   "index": "TRSI",
+   "statistic": "hotel guests per km2",
+   "spearman": 0.305,
+   "p_permutation": 0.29,
+   "partial_spearman_given_population_density": 0.049,
+   "partial_p_permutation": 0.87,
+   "circular": false
+  },
+  {
+   "index": "TRSI",
+   "statistic": "specialised-accommodation guests per km2",
+   "spearman": 0.534,
+   "p_permutation": 0.051,
+   "partial_spearman_given_population_density": 0.482,
+   "partial_p_permutation": 0.097,
+   "circular": false
+  }
+ ],
+ "population_density_vs": {
+  "hotel guests per km2": 0.877,
+  "specialised guests per km2": 0.793,
+  "TPI": 0.82,
+  "TSI": 0.864,
+  "ESI": 0.213,
+  "TRSI": 0.323
+ },
+ "table": [
+  {
+   "region": "Andijon",
+   "assessed_km2": 4198,
+   "hotel_guests_per_km2": 18.32,
+   "specialised_guests_per_km2": 4.65,
+   "population_per_km2": 824.4,
+   "ESI": 22.26,
+   "TSI": 33.73,
+   "TPI": 56.44,
+   "TRSI": 8.08
+  },
+  {
+   "region": "Buxoro",
+   "assessed_km2": 38973,
+   "hotel_guests_per_km2": 6.86,
+   "specialised_guests_per_km2": 0.33,
+   "population_per_km2": 53.3,
+   "ESI": 12.18,
+   "TSI": 10.18,
+   "TPI": 13.96,
+   "TRSI": 2.27
+  },
+  {
+   "region": "Farg‘ona",
+   "assessed_km2": 6637,
+   "hotel_guests_per_km2": 12.23,
+   "specialised_guests_per_km2": 14.68,
+   "population_per_km2": 624.5,
+   "ESI": 13.8,
+   "TSI": 25.61,
+   "TPI": 47.25,
+   "TRSI": 5.57
+  },
+  {
+   "region": "Jizzax",
+   "assessed_km2": 18665,
+   "hotel_guests_per_km2": 3.55,
+   "specialised_guests_per_km2": 2.06,
+   "population_per_km2": 82.4,
+   "ESI": 38.31,
+   "TSI": 21.42,
+   "TPI": 38.8,
+   "TRSI": 16.69
+  },
+  {
+   "region": "Namangan",
+   "assessed_km2": 7309,
+   "hotel_guests_per_km2": 9.08,
+   "specialised_guests_per_km2": 12.15,
+   "population_per_km2": 428.5,
+   "ESI": 38.44,
+   "TSI": 24.4,
+   "TPI": 45.28,
+   "TRSI": 15.16
+  },
+  {
+   "region": "Navoiy",
+   "assessed_km2": 108518,
+   "hotel_guests_per_km2": 0.45,
+   "specialised_guests_per_km2": 0.15,
+   "population_per_km2": 10.1,
+   "ESI": 17.78,
+   "TSI": 4.38,
+   "TPI": 9.64,
+   "TRSI": 3.08
+  },
+  {
+   "region": "Qashqadaryo",
+   "assessed_km2": 28582,
+   "hotel_guests_per_km2": 2.49,
+   "specialised_guests_per_km2": 1.05,
+   "population_per_km2": 127.3,
+   "ESI": 29.09,
+   "TSI": 13.36,
+   "TPI": 25.27,
+   "TRSI": 11.53
+  },
+  {
+   "region": "Qoraqalpog‘iston",
+   "assessed_km2": 162983,
+   "hotel_guests_per_km2": 0.24,
+   "specialised_guests_per_km2": 0.09,
+   "population_per_km2": 12.5,
+   "ESI": 11.1,
+   "TSI": 4.41,
+   "TPI": 13.37,
+   "TRSI": 1.64
+  },
+  {
+   "region": "Samarqand",
+   "assessed_km2": 16453,
+   "hotel_guests_per_km2": 26.04,
+   "specialised_guests_per_km2": 1.93,
+   "population_per_km2": 261.2,
+   "ESI": 24.97,
+   "TSI": 18.22,
+   "TPI": 34.34,
+   "TRSI": 12.63
+  },
+  {
+   "region": "Sirdaryo",
+   "assessed_km2": 4267,
+   "hotel_guests_per_km2": 7.92,
+   "specialised_guests_per_km2": 0.3,
+   "population_per_km2": 218.1,
+   "ESI": 12.25,
+   "TSI": 24.39,
+   "TPI": 36.27,
+   "TRSI": 15.65
+  },
+  {
+   "region": "Surxondaryo",
+   "assessed_km2": 19538,
+   "hotel_guests_per_km2": 4.69,
+   "specialised_guests_per_km2": 1.59,
+   "population_per_km2": 150.8,
+   "ESI": 46.89,
+   "TSI": 17.88,
+   "TPI": 42.22,
+   "TRSI": 13.09
+  },
+  {
+   "region": "Toshkent shahri",
+   "assessed_km2": 342,
+   "hotel_guests_per_km2": 3704.97,
+   "specialised_guests_per_km2": 215.79,
+   "population_per_km2": 9101.8,
+   "ESI": 32.0,
+   "TSI": 85.07,
+   "TPI": 95.02,
+   "TRSI": 15.77
+  },
+  {
+   "region": "Toshkent viloyati",
+   "assessed_km2": 14972,
+   "hotel_guests_per_km2": 10.03,
+   "specialised_guests_per_km2": 20.88,
+   "population_per_km2": 207.6,
+   "ESI": 60.39,
+   "TSI": 42.14,
+   "TPI": 74.94,
+   "TRSI": 26.82
+  },
+  {
+   "region": "Xorazm",
+   "assessed_km2": 6663,
+   "hotel_guests_per_km2": 26.59,
+   "specialised_guests_per_km2": 3.59,
+   "population_per_km2": 305.0,
+   "ESI": 16.6,
+   "TSI": 25.16,
+   "TPI": 41.5,
+   "TRSI": 11.29
+  }
+ ]
+}
