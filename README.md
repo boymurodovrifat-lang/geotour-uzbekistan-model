@@ -2,7 +2,11 @@
 
 Open geoportal and screening model for tourism, ecotourism and recreation opportunity in Uzbekistan.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24276301.svg)](https://doi.org/10.5281/zenodo.24276301)
+
 Live portal: https://geotour-uzbekistan.uz
+
+Archived release: v1.0.0, https://doi.org/10.5281/zenodo.24276301 (all versions: https://doi.org/10.5281/zenodo.24276300)
 
 This repository holds the analysis code, the 1 km input rasters, the results and the main source files of the portal, so that every number shown in the portal can be recomputed.
 
