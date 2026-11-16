@@ -25,157 +25,157 @@
  "monthly": [
   {
    "month": 1,
-   "mean": 19.8,
+   "mean": 48.3,
    "share_good_or_better_pct": 0.0,
    "share_very_good_pct": 0.0,
    "class_share_pct": {
-    "1": 43.0,
-    "2": 54.7,
-    "3": 2.3,
+    "1": 0.0,
+    "2": 14.2,
+    "3": 85.8,
     "4": 0.0,
     "5": 0.0
    }
   },
   {
    "month": 2,
-   "mean": 26.5,
-   "share_good_or_better_pct": 0.0,
+   "mean": 51.8,
+   "share_good_or_better_pct": 7.5,
    "share_very_good_pct": 0.0,
    "class_share_pct": {
-    "1": 23.4,
-    "2": 66.5,
-    "3": 10.1,
-    "4": 0.0,
+    "1": 0.0,
+    "2": 11.3,
+    "3": 81.2,
+    "4": 7.5,
     "5": 0.0
    }
   },
   {
    "month": 3,
-   "mean": 46.5,
-   "share_good_or_better_pct": 4.7,
+   "mean": 63.1,
+   "share_good_or_better_pct": 74.5,
    "share_very_good_pct": 0.0,
    "class_share_pct": {
-    "1": 3.0,
-    "2": 17.2,
-    "3": 75.1,
-    "4": 4.7,
+    "1": 0.0,
+    "2": 3.1,
+    "3": 22.4,
+    "4": 74.5,
     "5": 0.0
    }
   },
   {
    "month": 4,
-   "mean": 73.0,
-   "share_good_or_better_pct": 83.8,
-   "share_very_good_pct": 38.8,
+   "mean": 79.1,
+   "share_good_or_better_pct": 94.4,
+   "share_very_good_pct": 56.8,
    "class_share_pct": {
-    "1": 0.8,
-    "2": 2.8,
-    "3": 12.6,
-    "4": 45.0,
-    "5": 38.8
+    "1": 0.1,
+    "2": 1.9,
+    "3": 3.7,
+    "4": 37.7,
+    "5": 56.8
    }
   },
   {
    "month": 5,
-   "mean": 90.4,
-   "share_good_or_better_pct": 96.8,
-   "share_very_good_pct": 94.4,
+   "mean": 90.9,
+   "share_good_or_better_pct": 97.6,
+   "share_very_good_pct": 94.9,
    "class_share_pct": {
     "1": 0.0,
-    "2": 1.1,
-    "3": 2.1,
-    "4": 2.4,
-    "5": 94.4
+    "2": 0.1,
+    "3": 2.3,
+    "4": 2.7,
+    "5": 94.9
    }
   },
   {
    "month": 6,
-   "mean": 79.9,
-   "share_good_or_better_pct": 98.6,
-   "share_very_good_pct": 43.5,
+   "mean": 80.2,
+   "share_good_or_better_pct": 99.4,
+   "share_very_good_pct": 43.8,
    "class_share_pct": {
     "1": 0.0,
-    "2": 0.2,
-    "3": 1.2,
-    "4": 55.1,
-    "5": 43.5
+    "2": 0.0,
+    "3": 0.6,
+    "4": 55.6,
+    "5": 43.8
    }
   },
   {
    "month": 7,
-   "mean": 72.3,
-   "share_good_or_better_pct": 91.8,
-   "share_very_good_pct": 15.8,
+   "mean": 72.9,
+   "share_good_or_better_pct": 95.6,
+   "share_very_good_pct": 16.0,
    "class_share_pct": {
-    "1": 0.1,
-    "2": 0.3,
-    "3": 7.7,
-    "4": 76.0,
-    "5": 15.8
+    "1": 0.0,
+    "2": 0.1,
+    "3": 4.2,
+    "4": 79.6,
+    "5": 16.0
    }
   },
   {
    "month": 8,
-   "mean": 78.9,
-   "share_good_or_better_pct": 99.5,
-   "share_very_good_pct": 35.9,
+   "mean": 79.1,
+   "share_good_or_better_pct": 100.0,
+   "share_very_good_pct": 36.2,
    "class_share_pct": {
     "1": 0.0,
     "2": 0.0,
-    "3": 0.5,
-    "4": 63.6,
-    "5": 35.9
+    "3": 0.0,
+    "4": 63.8,
+    "5": 36.2
    }
   },
   {
    "month": 9,
-   "mean": 94.6,
-   "share_good_or_better_pct": 99.1,
-   "share_very_good_pct": 97.5,
+   "mean": 95.0,
+   "share_good_or_better_pct": 100.0,
+   "share_very_good_pct": 98.2,
    "class_share_pct": {
     "1": 0.0,
     "2": 0.0,
-    "3": 0.9,
-    "4": 1.6,
-    "5": 97.5
+    "3": 0.0,
+    "4": 1.8,
+    "5": 98.2
    }
   },
   {
    "month": 10,
-   "mean": 74.1,
-   "share_good_or_better_pct": 91.7,
-   "share_very_good_pct": 31.4,
+   "mean": 82.3,
+   "share_good_or_better_pct": 98.4,
+   "share_very_good_pct": 64.3,
    "class_share_pct": {
     "1": 0.0,
-    "2": 1.0,
-    "3": 7.2,
-    "4": 60.3,
-    "5": 31.4
+    "2": 0.0,
+    "3": 1.6,
+    "4": 34.1,
+    "5": 64.3
    }
   },
   {
    "month": 11,
-   "mean": 44.4,
-   "share_good_or_better_pct": 1.6,
+   "mean": 63.0,
+   "share_good_or_better_pct": 74.1,
    "share_very_good_pct": 0.0,
    "class_share_pct": {
-    "1": 1.0,
-    "2": 27.0,
-    "3": 70.5,
-    "4": 1.6,
+    "1": 0.0,
+    "2": 0.8,
+    "3": 25.0,
+    "4": 74.1,
     "5": 0.0
    }
   },
   {
    "month": 12,
-   "mean": 25.3,
-   "share_good_or_better_pct": 0.0,
+   "mean": 51.2,
+   "share_good_or_better_pct": 5.4,
    "share_very_good_pct": 0.0,
    "class_share_pct": {
-    "1": 26.3,
-    "2": 66.1,
-    "3": 7.6,
-    "4": 0.0,
+    "1": 0.0,
+    "2": 3.2,
+    "3": 91.4,
+    "4": 5.4,
     "5": 0.0
    }
   }
@@ -194,21 +194,21 @@
    "wind": 0.0
   },
   "3": {
-   "thermal": 100.0,
+   "thermal": 98.7,
    "sky": 0.0,
-   "precipitation": 0.0,
+   "precipitation": 1.3,
    "wind": 0.0
   },
   "4": {
-   "thermal": 87.0,
-   "sky": 5.3,
-   "precipitation": 7.6,
+   "thermal": 84.0,
+   "sky": 5.4,
+   "precipitation": 10.7,
    "wind": 0.0
   },
   "5": {
-   "thermal": 87.2,
+   "thermal": 86.3,
    "sky": 0.0,
-   "precipitation": 12.8,
+   "precipitation": 13.7,
    "wind": 0.0
   },
   "6": {
@@ -242,9 +242,9 @@
    "wind": 0.0
   },
   "11": {
-   "thermal": 100.0,
+   "thermal": 99.9,
    "sky": 0.0,
-   "precipitation": 0.0,
+   "precipitation": 0.1,
    "wind": 0.0
   },
   "12": {
@@ -255,28 +255,28 @@
   }
  },
  "good_months_per_cell": {
-  "median": 7,
-  "p10": 6,
-  "p90": 7,
-  "share_with_at_least_4_pct": 98.9
+  "median": 9,
+  "p10": 7,
+  "p90": 9,
+  "share_with_at_least_4_pct": 99.6
  },
  "regions": [
   {
    "id": "region-11",
    "name": "Andijon",
    "monthly": [
-    30.3,
-    36.7,
-    55.7,
-    85.8,
+    51.8,
+    54.8,
+    68.6,
+    86.7,
     88.4,
     77.5,
-    73.1,
+    73.2,
     79.3,
     93.1,
-    82.9,
-    48.9,
-    31.3
+    85.6,
+    65.1,
+    51.2
    ],
    "best_months": [
     4,
@@ -284,49 +284,49 @@
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-10",
    "name": "Namangan",
    "monthly": [
-    24.7,
-    28.7,
-    44.0,
-    69.5,
-    78.8,
-    77.7,
-    77.1,
-    82.3,
-    89.7,
-    73.9,
-    42.9,
-    26.2
+    47.9,
+    49.6,
+    59.6,
+    74.8,
+    80.9,
+    79.2,
+    77.6,
+    82.7,
+    91.4,
+    80.1,
+    60.1,
+    47.4
    ],
    "best_months": [
     5,
-    6,
     8,
-    9
+    9,
+    10
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-9",
    "name": "Farg‘ona",
    "monthly": [
-    30.6,
-    35.4,
-    53.0,
-    90.1,
-    90.1,
+    52.1,
+    55.3,
+    67.5,
+    90.7,
+    90.2,
     78.4,
     71.0,
     77.6,
-    90.6,
-    90.2,
-    52.0,
-    33.9
+    90.7,
+    91.5,
+    67.8,
+    53.8
    ],
    "best_months": [
     4,
@@ -334,93 +334,94 @@
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-5",
    "name": "Qoraqalpog‘iston",
    "monthly": [
-    5.1,
-    14.8,
-    41.2,
-    67.2,
-    95.0,
+    43.5,
+    48.1,
+    62.0,
+    77.5,
+    95.3,
     83.7,
-    75.3,
+    75.5,
     81.2,
     98.0,
-    65.8,
-    38.5,
-    14.1
+    78.1,
+    59.8,
+    47.7
    ],
    "best_months": [
     5,
     9
    ],
-   "good_months_median": 7
+   "good_months_median": 8
   },
   {
    "id": "region-4",
    "name": "Xorazm",
    "monthly": [
-    24.3,
-    34.0,
-    52.0,
-    83.3,
+    51.5,
+    56.8,
+    68.6,
+    85.8,
     92.3,
     77.2,
-    68.2,
+    68.9,
     77.7,
     97.5,
-    73.5,
-    46.1,
-    29.0
+    82.4,
+    65.3,
+    53.9
    ],
    "best_months": [
+    4,
     5,
     9
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-6",
    "name": "Navoiy",
    "monthly": [
-    24.7,
-    31.7,
     51.3,
-    78.8,
+    55.3,
+    67.6,
+    83.4,
     93.6,
     78.5,
-    71.2,
+    71.4,
     77.3,
     95.9,
-    74.1,
-    46.9,
-    29.4
+    82.7,
+    65.5,
+    53.3
    ],
    "best_months": [
     5,
     9
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-13",
    "name": "Surxondaryo",
    "monthly": [
-    29.5,
-    32.7,
-    45.0,
-    68.3,
-    77.1,
-    74.0,
-    66.0,
-    76.9,
-    84.6,
-    81.4,
-    50.0,
-    35.3
+    48.1,
+    49.9,
+    56.4,
+    72.5,
+    79.6,
+    75.8,
+    69.5,
+    78.1,
+    87.0,
+    86.8,
+    65.5,
+    54.5
    ],
    "best_months": [
     5,
@@ -429,48 +430,48 @@
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 8
   },
   {
    "id": "region-2",
    "name": "Samarqand",
    "monthly": [
-    32.7,
-    35.5,
-    46.2,
-    70.8,
-    88.5,
+    50.8,
+    52.1,
+    58.0,
+    74.8,
+    88.7,
     82.2,
-    74.7,
+    75.1,
     80.0,
     95.0,
-    83.1,
-    48.4,
-    35.8
+    87.1,
+    63.7,
+    53.8
    ],
    "best_months": [
     5,
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 8
   },
   {
    "id": "region-1",
    "name": "Toshkent viloyati",
    "monthly": [
-    19.8,
-    21.9,
-    33.3,
+    41.9,
+    41.5,
     47.7,
-    69.0,
-    78.4,
-    79.0,
-    82.9,
-    86.5,
-    64.7,
-    35.7,
-    21.1
+    54.8,
+    72.3,
+    80.4,
+    80.1,
+    84.0,
+    89.2,
+    72.7,
+    51.4,
+    40.0
    ],
    "best_months": [
     6,
@@ -484,18 +485,18 @@
    "id": "region-8",
    "name": "Sirdaryo",
    "monthly": [
-    34.2,
-    38.0,
-    51.3,
-    79.5,
+    52.4,
+    54.8,
+    63.4,
+    80.2,
     87.6,
     75.7,
-    68.7,
+    68.9,
     75.2,
     91.1,
-    88.4,
-    50.1,
-    34.6
+    89.8,
+    64.8,
+    51.5
    ],
    "best_months": [
     4,
@@ -503,24 +504,24 @@
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-7",
    "name": "Jizzax",
    "monthly": [
-    31.2,
-    33.7,
-    45.1,
-    67.8,
-    85.8,
-    80.9,
-    73.8,
-    79.2,
-    92.6,
-    81.4,
-    46.8,
-    32.8
+    50.5,
+    51.8,
+    58.1,
+    72.3,
+    86.5,
+    81.2,
+    74.3,
+    79.3,
+    93.0,
+    85.7,
+    62.4,
+    51.2
    ],
    "best_months": [
     5,
@@ -528,24 +529,24 @@
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 8
   },
   {
    "id": "region-3",
    "name": "Buxoro",
    "monthly": [
-    35.5,
-    40.0,
-    57.9,
-    89.9,
+    57.0,
+    59.9,
+    71.0,
+    90.6,
     89.6,
     74.9,
-    65.1,
+    66.2,
     74.2,
     92.3,
-    87.7,
-    53.7,
-    37.2
+    89.8,
+    70.3,
+    58.2
    ],
    "best_months": [
     4,
@@ -553,49 +554,48 @@
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 9
   },
   {
    "id": "region-12",
    "name": "Qashqadaryo",
    "monthly": [
-    31.9,
-    35.0,
-    47.8,
-    73.1,
-    81.6,
-    76.6,
-    68.4,
-    77.3,
-    88.6,
-    83.7,
-    48.9,
-    35.8
+    50.4,
+    51.8,
+    58.9,
+    76.5,
+    83.2,
+    77.5,
+    70.2,
+    77.8,
+    90.1,
+    88.0,
+    64.7,
+    54.6
    ],
    "best_months": [
     5,
-    8,
     9,
     10
    ],
-   "good_months_median": 7
+   "good_months_median": 8
   },
   {
    "id": "region-0",
    "name": "Toshkent shahri",
    "monthly": [
-    32.0,
-    33.6,
-    47.5,
-    71.9,
+    49.2,
+    48.5,
+    58.9,
+    73.1,
     86.1,
     79.6,
     71.6,
     76.5,
     92.5,
-    82.2,
-    46.4,
-    32.5
+    84.4,
+    59.9,
+    48.1
    ],
    "best_months": [
     5,
@@ -610,18 +610,18 @@
    "id": "bukhara",
    "name": "Bukhara",
    "monthly": [
-    36.8,
-    40.2,
     57.3,
-    88.9,
+    59.6,
+    70.1,
+    89.6,
     92.7,
     79.4,
     74.6,
     80.2,
     96.4,
-    86.1,
-    53.6,
-    38.2
+    88.2,
+    70.3,
+    58.6
    ],
    "apparent_tmax_c": [
     2.9,
@@ -662,18 +662,18 @@
    "id": "samarkand",
    "name": "Samarkand",
    "monthly": [
-    33.2,
-    36.3,
-    43.2,
-    68.8,
+    49.9,
+    51.5,
+    54.2,
+    71.2,
     89.5,
     83.1,
     77.1,
     81.0,
     96.0,
-    83.9,
-    49.9,
-    37.4
+    86.4,
+    64.1,
+    54.1
    ],
    "apparent_tmax_c": [
     3.9,
@@ -705,25 +705,26 @@
    ],
    "best_months": [
     5,
-    9
+    9,
+    10
    ]
   },
   {
    "id": "khiva",
    "name": "Khiva · Itchan Kala",
    "monthly": [
-    24.9,
-    33.1,
-    50.3,
-    83.1,
+    51.7,
+    56.3,
+    67.8,
+    85.4,
     93.6,
     77.5,
     70.8,
     77.7,
     97.3,
-    73.2,
-    45.6,
-    29.4
+    82.3,
+    65.0,
+    54.0
    ],
    "apparent_tmax_c": [
     -2.2,
@@ -754,6 +755,7 @@
     8.9
    ],
    "best_months": [
+    4,
     5,
     9
    ]
@@ -762,18 +764,18 @@
    "id": "shakhrisabz",
    "name": "Shakhrisabz",
    "monthly": [
-    33.2,
-    34.3,
-    43.4,
-    68.2,
+    48.6,
+    47.8,
+    52.3,
+    69.6,
     88.8,
     81.4,
     74.6,
     80.8,
     95.3,
-    86.2,
-    50.0,
-    37.3
+    88.2,
+    63.1,
+    52.7
    ],
    "apparent_tmax_c": [
     4.7,
@@ -813,18 +815,18 @@
    "id": "tashkent",
    "name": "Tashkent",
    "monthly": [
-    32.3,
-    33.3,
-    47.3,
-    71.4,
+    49.0,
+    47.9,
+    58.3,
+    72.5,
     85.1,
     79.0,
     71.1,
     76.2,
     92.5,
-    81.7,
-    46.2,
-    32.6
+    84.0,
+    59.5,
+    47.8
    ],
    "apparent_tmax_c": [
     3.5,
@@ -864,18 +866,18 @@
    "id": "chimgan",
    "name": "Chimgan",
    "monthly": [
-    13.8,
-    15.4,
-    21.8,
-    15.1,
-    58.0,
+    34.3,
+    30.1,
+    31.5,
+    19.1,
+    61.2,
     92.8,
     92.9,
     96.0,
-    92.9,
-    51.3,
-    27.6,
-    14.8
+    93.3,
+    62.8,
+    39.8,
+    28.5
    ],
    "apparent_tmax_c": [
     -3.4,
@@ -916,18 +918,18 @@
    "id": "termez",
    "name": "Termez",
    "monthly": [
-    43.1,
-    48.6,
-    66.0,
+    59.6,
+    63.8,
+    73.6,
     92.4,
     82.5,
-    66.5,
-    42.0,
-    65.3,
+    67.1,
+    50.5,
+    66.1,
     84.5,
     98.1,
-    64.6,
-    48.8
+    76.9,
+    65.7
    ],
    "apparent_tmax_c": [
     6.9,
@@ -966,18 +968,18 @@
    "id": "nukus",
    "name": "Nukus",
    "monthly": [
-    17.1,
-    28.3,
-    49.9,
-    79.4,
+    48.6,
+    54.3,
+    67.7,
+    84.0,
     95.4,
     77.3,
     71.2,
     77.4,
     97.8,
-    69.6,
-    42.0,
-    26.1
+    80.8,
+    62.8,
+    52.6
    ],
    "apparent_tmax_c": [
     -3.9,
@@ -1015,40 +1017,40 @@
  ],
  "sensitivity": {
   "thermal scale -2 degC": {
-   "mean_abs_diff": 6.59,
-   "same_class_pct": 75.2,
-   "peak_month_same_pct": 57.9,
-   "destination_best_months_jaccard_mean": 0.85
+   "mean_abs_diff": 4.71,
+   "same_class_pct": 83.7,
+   "peak_month_same_pct": 57.0,
+   "destination_best_months_jaccard_mean": 0.91
   },
   "thermal scale +2 degC": {
-   "mean_abs_diff": 5.72,
-   "same_class_pct": 74.8,
-   "peak_month_same_pct": 59.3,
-   "destination_best_months_jaccard_mean": 0.72
+   "mean_abs_diff": 4.01,
+   "same_class_pct": 80.3,
+   "peak_month_same_pct": 59.1,
+   "destination_best_months_jaccard_mean": 0.66
   },
   "precipitation thresholds -30%": {
-   "mean_abs_diff": 1.26,
-   "same_class_pct": 95.2,
-   "peak_month_same_pct": 91.5,
-   "destination_best_months_jaccard_mean": 0.81
+   "mean_abs_diff": 1.65,
+   "same_class_pct": 94.0,
+   "peak_month_same_pct": 90.9,
+   "destination_best_months_jaccard_mean": 0.83
   },
   "precipitation thresholds +30%": {
-   "mean_abs_diff": 0.44,
-   "same_class_pct": 98.3,
-   "peak_month_same_pct": 94.9,
-   "destination_best_months_jaccard_mean": 0.96
+   "mean_abs_diff": 0.57,
+   "same_class_pct": 97.9,
+   "peak_month_same_pct": 94.5,
+   "destination_best_months_jaccard_mean": 1.0
   },
   "equal weights": {
-   "mean_abs_diff": 8.74,
-   "same_class_pct": 51.3,
-   "peak_month_same_pct": 96.1,
-   "destination_best_months_jaccard_mean": 0.68
+   "mean_abs_diff": 7.77,
+   "same_class_pct": 56.9,
+   "peak_month_same_pct": 96.0,
+   "destination_best_months_jaccard_mean": 0.65
   },
   "arithmetic aggregation (HCI form)": {
-   "mean_abs_diff": 12.31,
-   "same_class_pct": 52.4,
-   "peak_month_same_pct": 99.1,
-   "destination_best_months_jaccard_mean": 0.81
+   "mean_abs_diff": 5.36,
+   "same_class_pct": 68.3,
+   "peak_month_same_pct": 99.0,
+   "destination_best_months_jaccard_mean": 0.85
   }
  }
 }
