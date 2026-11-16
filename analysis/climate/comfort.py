@@ -7,11 +7,12 @@ Inputs
   public/science/model-v0.2/inputs/{regions,elevation_m}.tif and grid.json   (1 km EPSG:6933 grid)
 
 Comfort model (a monthly-climate adaptation of the Holiday Climate Index layout, Scott et al. 2016).
-The weights follow the HCI:Urban; the rating curves are this study's own simplification and are
-tested below.
+The weights and the thermal ratings are those of the HCI:Urban; the sky, precipitation and wind ratings
+are this study's own monthly simplification and are tested below.
   TC  thermal comfort from the daytime apparent temperature AT = Tmax + 0.33 e - 0.70 ws - 4.00
-      (Steadman 1994, shade form; e vapour pressure in hPa), rated with a piecewise-linear form of the
-      HCI thermal scale (TC_T / TC_R below): 1 at 24 degC, 0.5 at 17 and 33.5 degC, 0 at -5 and 39 degC.
+      (Steadman 1994, shade form; e vapour pressure in hPa), rated with the HCI:Urban thermal ratings
+      (Scott et al. 2016, Table 3; TC_T / TC_R below): 1 at 23-25 degC, 0.5 at 11-14 and 33-34 degC,
+      0 at 39 degC and above, never below 0.1 in the cold.
   A   aesthetic / sky: srad / Rso, Rso = (0.75 + 2e-5 z) Ra (FAO-56 eqs 21 and 37). 1 at >= 0.75,
       0 at <= 0.35.
   P   precipitation: 1 at <= 15 mm per month, 0 at >= 120 mm.
@@ -40,10 +41,12 @@ ROOT = Path(__file__).resolve().parents[2]
 INPUTS = ROOT / 'public/science/model-v0.2/inputs'
 OUT = ROOT / 'public/science/climate'
 MID_DOY = np.array([15, 46, 74, 105, 135, 166, 196, 227, 258, 288, 319, 349])
-# Thermal rating: piecewise-linear version of the HCI thermal-comfort scale (Scott et al. 2016, rating/10),
-# applied to the daytime apparent temperature instead of the HCI effective temperature.
-TC_T = [-5, 3, 9, 12.5, 15.5, 17, 18, 19, 21, 24, 26, 27.5, 29.5, 31.5, 33.5, 35.5, 37.5, 39]
-TC_R = [0, .1, .2, .3, .4, .5, .6, .7, .9, 1, .9, .8, .7, .6, .5, .4, .2, 0]
+# Thermal rating: the HCI:Urban thermal-comfort ratings (Scott et al. 2016, Table 3), divided by 10 and
+# interpolated linearly between class mid-points. Applied to the daytime apparent temperature in place of the
+# HCI effective temperature. Classes: <=-6:1, -1..-5:2, 0..6:3, 7..10:4, 11..14:5, 15..17:6, 18..19:7,
+# 20..22:9, 23..25:10, 26:9, 27..28:8, 29..30:7, 31..32:6, 33..34:5, 35..36:4, 37..39:2, >=39:0.
+TC_T = [-8, -3, 3, 8.5, 12.5, 16, 18.5, 21, 24, 26, 27.5, 29.5, 31.5, 33.5, 35.5, 38, 39.5]
+TC_R = [.1, .2, .3, .4, .5, .6, .7, .9, 1, .9, .8, .7, .6, .5, .4, .2, 0]
 BASE = {'shift': 0.0, 'ppt': (15.0, 120.0), 'sky': (0.35, 0.75), 'wind': (4.0, 10.0),
         'weights': (4, 2, 3, 1), 'aggregation': 'geometric'}
 VARIANTS = {
