@@ -1,0 +1,236 @@
+{
+ "photos_collected": 31219,
+ "photos_inside_assessed_land": 28283,
+ "photos_with_exif_date": 26397,
+ "photo_user_days": 9817,
+ "cells_with_photos": 4923,
+ "cells_with_photos_pct": 1.12,
+ "cell_auc": {
+  "ESI": {
+   "auc": 0.588,
+   "ci95": [
+    0.55,
+    0.629
+   ]
+  },
+  "TSI": {
+   "auc": 0.625,
+   "ci95": [
+    0.579,
+    0.674
+   ]
+  },
+  "TPI": {
+   "auc": 0.632,
+   "ci95": [
+    0.586,
+    0.678
+   ]
+  },
+  "TRSI": {
+   "auc": 0.591,
+   "ci95": [
+    0.556,
+    0.625
+   ]
+  },
+  "built-up proximity": {
+   "auc": 0.609,
+   "ci95": [
+    0.568,
+    0.645
+   ]
+  },
+  "main-road proximity": {
+   "auc": 0.62,
+   "ci95": [
+    0.576,
+    0.662
+   ]
+  }
+ },
+ "block": {
+  "ESI": {
+   "spearman": 0.136,
+   "partial_given_built_up_share": 0.107
+  },
+  "TSI": {
+   "spearman": 0.154,
+   "partial_given_built_up_share": 0.057
+  },
+  "TPI": {
+   "spearman": 0.226,
+   "partial_given_built_up_share": 0.118
+  },
+  "TRSI": {
+   "spearman": 0.086,
+   "partial_given_built_up_share": 0.015
+  },
+  "n_blocks": 753,
+  "blocks_with_photos": 735,
+  "built_up_share_vs_photos": 0.188
+ },
+ "season": {
+  "national": {
+   "dated_photo_user_days": 2813,
+   "pud_month_share_pct": [
+    4.9,
+    5.0,
+    7.9,
+    11.8,
+    13.7,
+    9.7,
+    6.8,
+    9.3,
+    9.5,
+    11.5,
+    4.8,
+    5.1
+   ],
+   "spearman_with_mean_cci": 0.841,
+   "permutation_p": 0.001,
+   "share_in_months_mean_cci_ge_60_pct": 85.0,
+   "months_mean_cci_ge_60": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ]
+  },
+  "Samarkand": {
+   "photo_user_days": 172,
+   "spearman_with_cci": 0.788,
+   "permutation_p": 0.003,
+   "top_months": [
+    9,
+    8,
+    6,
+    5
+   ]
+  },
+  "Bukhara": {
+   "photo_user_days": 149,
+   "spearman_with_cci": 0.655,
+   "permutation_p": 0.023,
+   "top_months": [
+    8,
+    7,
+    5,
+    6
+   ]
+  },
+  "Khiva": {
+   "photo_user_days": 70,
+   "spearman_with_cci": 0.491,
+   "permutation_p": 0.138,
+   "top_months": [
+    9,
+    10,
+    5,
+    8
+   ]
+  },
+  "Tashkent": {
+   "photo_user_days": 933,
+   "spearman_with_cci": 0.574,
+   "permutation_p": 0.05,
+   "top_months": [
+    10,
+    4,
+    5,
+    9
+   ]
+  }
+ },
+ "cell_auc_pud_weighted": {
+  "ESI": {
+   "auc": 0.618,
+   "ci95": [
+    0.56,
+    0.666
+   ]
+  },
+  "TSI": {
+   "auc": 0.689,
+   "ci95": [
+    0.594,
+    0.757
+   ]
+  },
+  "TPI": {
+   "auc": 0.698,
+   "ci95": [
+    0.611,
+    0.762
+   ]
+  },
+  "TRSI": {
+   "auc": 0.63,
+   "ci95": [
+    0.566,
+    0.681
+   ]
+  },
+  "built-up proximity": {
+   "auc": 0.672,
+   "ci95": [
+    0.583,
+    0.746
+   ]
+  },
+  "main-road proximity": {
+   "auc": 0.68,
+   "ci95": [
+    0.588,
+    0.753
+   ]
+  }
+ },
+ "capture_pct": {
+  "ESI": {
+   "top1": 4.8,
+   "top5": 11.0,
+   "top10": 14.3
+  },
+  "TSI": {
+   "top1": 31.0,
+   "top5": 40.7,
+   "top10": 45.1
+  },
+  "TPI": {
+   "top1": 30.4,
+   "top5": 39.9,
+   "top10": 45.4
+  },
+  "TRSI": {
+   "top1": 5.4,
+   "top5": 11.2,
+   "top10": 20.8
+  },
+  "built-up proximity": {
+   "top1": 20.1,
+   "top5": 35.7,
+   "top10": 39.8
+  },
+  "main-road proximity": {
+   "top1": 18.8,
+   "top5": 38.7,
+   "top10": 43.0
+  }
+ },
+ "within_settlements_pud_weighted_auc": {
+  "ESI": 0.739,
+  "TSI": 0.894,
+  "TPI": 0.882,
+  "TRSI": 0.673,
+  "built-up proximity": 0.808,
+  "main-road proximity": 0.83
+ },
+ "settlement_cells": 28267,
+ "settlement_pud_share_pct": 37.1
+}
