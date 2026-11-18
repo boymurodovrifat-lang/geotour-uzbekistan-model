@@ -6,7 +6,7 @@ Open geoportal and screening model for tourism, ecotourism and recreation opport
 
 Live portal: https://geotour-uzbekistan.uz
 
-Archived at Zenodo: all versions, https://doi.org/10.5281/zenodo.24276300 (this DOI always resolves to the latest release); v1.0.0, https://doi.org/10.5281/zenodo.24276301.
+Archived at Zenodo: all versions, https://doi.org/10.5281/zenodo.24276300 (this DOI always resolves to the latest release); v1.0.0, https://doi.org/10.5281/zenodo.24276301; v1.1.0, https://doi.org/10.5281/zenodo.24282790.
 
 This repository holds the analysis code, the 1 km input rasters, the results and the main source files of the portal, so that every number shown in the portal can be recomputed.
 
@@ -37,7 +37,9 @@ Each index is a weighted geometric mean on a 0–100 scale. Weights lie midway b
 | `analysis/protected/` | OpenStreetMap protected areas (Geofabrik, 15 Nov 2026) and the ESI sensitivity test |
 | `analysis/validation/osm_currency.py` | How current the OpenStreetMap point extract is, against the Geofabrik extract of 15 Nov 2026 (`osm-currency.json`) |
 | `analysis/validation/commons_photos.py` | Independent test with 31,219 geotagged Wikimedia Commons photographs (photo-user-days): where and when photographs are taken (`commons-photo-test.json`, `paper/figures/fig_photos.png`) |
-| `data/commons_photos_uz_2026-11-16.json` | Metadata of the geotagged Commons files used by the photo test: page id, latitude, longitude, uploader, upload date, date taken (collected 16 Nov 2026) |
+| `analysis/inventory/` | Test against the official register of religious tourism sites (Committee on Religious Affairs; 505 mapped sites): `extract_osm_religious.py` (OpenStreetMap religious and commemorative features from the Geofabrik extract of 15 Nov 2026, saved as `osm_religious_261115.json`), `inventory_gap.py` (visibility of each site to the model, OpenStreetMap and Commons; name matching; scores at the sites; recomputation of TSI and TPI with the register added, saved as `augmented_1km.npz`; `inventory-gap.json`), `drivers_and_scale.py` (logistic models of omission and discrimination at four scales; `inventory-drivers-scale.json`), `figures_inventory.py` (manuscript Figures 8–10) |
+| `analysis/tourism/build_religious_sites.py` | Builds the register layer of the portal from the Committee's spreadsheet (coordinate parsing, photographs, translations) |
+| `data/commons/` | Metadata of the geotagged Commons files used by the photo test: page id, latitude, longitude, uploader, upload date, date taken (collected 16 Nov 2026) |
 | `analysis/climate/` | TerraClimate 1991–2020 monthly normals and the monthly climate comfort index ("When to go") |
 | `analysis/portal/` | Lossless WebP publishing step, story-map probe values, load-performance measurement |
 | `public/science/model-v0.2/` | Grid definition, audited point table and 1 km input rasters |
@@ -62,6 +64,16 @@ python analysis/model_v04/figures.py
 python analysis/build_routes.py
 ```
 
+Register test (v1.2.0). The register is not stored here; download it from the portal into `public/tourism/` first:
+
+```
+curl -o public/tourism/religious-sites.json https://geotour-uzbekistan.uz/tourism/religious-sites.json
+python analysis/inventory/extract_osm_religious.py uzbekistan-261115.osm.pbf analysis/inventory/osm_religious_261115.json   # optional, the output is included
+python analysis/inventory/inventory_gap.py
+python analysis/inventory/drivers_and_scale.py
+python analysis/inventory/figures_inventory.py
+```
+
 `compute.py` uses a fixed random seed and takes about two minutes. `figures.py` reads `_arrays.npz`, which `compute.py` writes next to the results. SHA-256 hashes of the input rasters are stored in `results.json`.
 
 ## Data sources and licences
@@ -76,6 +88,7 @@ python analysis/build_routes.py
 | Monthly climate normals | TerraClimate (Abatzoglou et al. 2018), 1991–2020 | CC0 1.0 |
 | Regional accommodation and population | Statistics Committee / Statistics Agency of Uzbekistan, public releases | public statistics |
 | Geotagged photograph metadata (photo test only) | Wikimedia Commons API (location, uploader, dates; no images) | Commons files keep their own free licences; metadata collected via the public API |
+| Official register of religious tourism sites (register test only) | Committee on Religious Affairs of the Republic of Uzbekistan; served by the portal at `/tourism/religious-sites.json`, not stored in this repository | official list, used with attribution |
 | Live weather in the portal | Open-Meteo, requested in the visitor's browser; not stored here | CC BY 4.0 |
 
 The code in this repository is released under the MIT licence (see `LICENSE`). Derived data keep the licences of their sources; files derived from OpenStreetMap remain under ODbL 1.0.
@@ -87,6 +100,7 @@ The code in this repository is released under the MIT licence (see `LICENSE`). D
 - Distances are straight-line, not travel time.
 - The geotagged-photo test shows that TSI and TPI concentrate photographed places better than settlement or road proximity at the top of their range, but over the whole country they add little to access alone; ESI and TRSI do worse than these baselines.
 - A dominant land-cover class at 1 km hides small features.
+- Against the official register, 31% of 505 pilgrimage sites have a model record within 500 m and 45% are missing from the model, OpenStreetMap and Commons alike; adding the register changes the TPI class of 6.9–8.0% of the land. The maps are robust at regional scale but inventory-limited at site scale.
 
 ## Authors
 
@@ -96,7 +110,7 @@ Contact: Rifat Boymurodov, boymurodovrifat@gmail.com
 
 ## How to cite
 
-Gulmuradov, F.; Boymurodov, R.; Omonov, I.; Qalandarov, M.; Tursunov, B.; Po‘latov, A.; Umarov, N. An open, reproducible geoportal for screening tourism and ecotourism suitability in Uzbekistan. Manuscript under preparation, 2026. Code and data: https://github.com/boymurodovrifat-lang/geotour-uzbekistan-model
+Gulmuradov, F.; Boymurodov, R.; Omonov, I.; Qalandarov, M.; Tursunov, B.; Po‘latov, A.; Umarov, N. Open-data tourism maps and their crowdsourced validation share blind spots: an official pilgrimage register as an independent test in Uzbekistan. Manuscript under preparation, 2026. Code and data: https://github.com/boymurodovrifat-lang/geotour-uzbekistan-model
 
 ## Acknowledgement
 

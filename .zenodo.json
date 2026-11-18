@@ -1,8 +1,8 @@
 {
-  "title": "GeoTour Uzbekistan: open-data tourism screening model, results and geoportal source (v1.1)",
+  "title": "GeoTour Uzbekistan: open-data tourism screening model, results, register test and geoportal source (v1.2)",
   "upload_type": "software",
-  "description": "<p>Code, 1 km input rasters, results and the main portal source of the GeoTour Uzbekistan open-data screening model, published in the geoportal <a href=\"https://geotour-uzbekistan.uz\">https://geotour-uzbekistan.uz</a>.</p><p>Four indices (ESI, TSI, TPI, TRSI) on a 1 km equal-area grid (EPSG:6933, 438,100 km² of assessed land), computed from OpenStreetMap, ESA WorldCover 2021 and Copernicus DEM GLO-90 with a weighted geometric mean and weights midway between equal and entropy weights; per-cell class stability and uncertainty range from a 500-run Monte Carlo experiment; a Sobol variance decomposition; a road-network distance test; a demand-side check against official regional accommodation statistics; an ESI sensitivity test with OpenStreetMap protected areas; a monthly climate comfort layer from TerraClimate 1991–2020 normals; lab measurements of portal load performance; a check of how current the OpenStreetMap point extract is; and an independent test against 31,219 geotagged Wikimedia Commons photographs (photo-user-days by place and month).</p><p>This is a screening without expert calibration or field validation. Code: MIT licence. Derived data keep the licences of their sources (OpenStreetMap: ODbL 1.0; ESA WorldCover: CC BY 4.0; TerraClimate: CC0 1.0; Copernicus DEM: produced using Copernicus WorldDEM-90 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018 provided under COPERNICUS by the European Union and ESA; all rights reserved).</p>",
-  "version": "1.1.0",
+  "description": "<p>Code, 1 km input rasters, results and the main portal source of the GeoTour Uzbekistan open-data screening model, published in the geoportal <a href=\"https://geotour-uzbekistan.uz\">https://geotour-uzbekistan.uz</a>.</p><p>Four indices (ESI, TSI, TPI, TRSI) on a 1 km equal-area grid (EPSG:6933, 438,100 km² of assessed land), computed from OpenStreetMap, ESA WorldCover 2021 and Copernicus DEM GLO-90 with a weighted geometric mean and weights midway between equal and entropy weights; per-cell class stability and uncertainty range from a 500-run Monte Carlo experiment; a Sobol variance decomposition; a road-network distance test; a demand-side check against official regional accommodation statistics; an ESI sensitivity test with OpenStreetMap protected areas; a monthly climate comfort layer from TerraClimate 1991–2020 normals; lab measurements of portal load performance; a check of how current the OpenStreetMap point extract is; and an independent test against 31,219 geotagged Wikimedia Commons photographs (photo-user-days by place and month); and a test against the official register of 525 religious tourism sites of the Committee on Religious Affairs: visibility of each site to the model, OpenStreetMap and Commons, logistic models of omission, discrimination at four spatial scales and a recomputation of TSI and TPI with the register added. The register itself is served by the geoportal and is not part of this archive.</p><p>This is a screening without expert calibration or field validation. Code: MIT licence. Derived data keep the licences of their sources (OpenStreetMap: ODbL 1.0; ESA WorldCover: CC BY 4.0; TerraClimate: CC0 1.0; Copernicus DEM: produced using Copernicus WorldDEM-90 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018 provided under COPERNICUS by the European Union and ESA; all rights reserved).</p>",
+  "version": "1.2.0",
   "license": "MIT",
   "access_right": "open",
   "creators": [
@@ -52,7 +52,11 @@
     "tourism climate comfort",
     "OpenStreetMap",
     "ecotourism",
-    "Uzbekistan"
+    "Uzbekistan",
+    "volunteered geographic information",
+    "data completeness",
+    "pilgrimage tourism",
+    "validation bias"
   ],
   "related_identifiers": [
     {

@@ -4,3 +4,8 @@ tifffile
 pyproj
 pillow
 matplotlib
+rapidfuzz
+statsmodels
+osmium
+openpyxl
+shapely
