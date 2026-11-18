@@ -1,0 +1,919 @@
+{
+ "version": "inventory-gap-1",
+ "date": "2026-11-18",
+ "osm_extract": "uzbekistan-261115.osm.pbf",
+ "osm_features": 12667,
+ "osm_features_by_kind": {
+  "worship": 2957,
+  "heritage": 1360,
+  "cemetery": 8350
+ },
+ "osm_relations_without_way_points": 132,
+ "official": {
+  "records": 525,
+  "mapped": 505,
+  "not_mapped": 20,
+  "sharing_a_coordinate": 31,
+  "on_assessed_cells": 505,
+  "distinct_cells": 418
+ },
+ "representation_pct": {
+  "osm_worship_250m": 48.5,
+  "osm_worship_or_heritage_250m": 51.7,
+  "osm_any_incl_cemetery_250m": 71.9,
+  "osm_worship_or_heritage_500m": 57.6,
+  "osm_name_match_2km": 37.8,
+  "model_record_500m": 31.1,
+  "model_record_1km": 38.2,
+  "commons_photo_150m": 23.2,
+  "commons_photo_500m": 30.3
+ },
+ "joint_pct": {
+  "none_of_three": 44.6,
+  "all_three": 18.4,
+  "osm_but_not_model": 22.8,
+  "model_but_not_osm_250m": 2.2,
+  "photo_but_not_model": 4.0
+ },
+ "by_region": [
+  {
+   "region": "Andijon viloyati",
+   "sites": 89,
+   "osm_worship_250m": 38.2,
+   "osm_worship_or_heritage_250m": 38.2,
+   "osm_any_incl_cemetery_250m": 65.2,
+   "osm_worship_or_heritage_500m": 44.9,
+   "osm_name_match_2km": 23.6,
+   "model_record_500m": 11.2,
+   "model_record_1km": 19.1,
+   "commons_photo_150m": 7.9,
+   "commons_photo_500m": 12.4
+  },
+  {
+   "region": "Buxoro viloyati",
+   "sites": 29,
+   "osm_worship_250m": 89.7,
+   "osm_worship_or_heritage_250m": 89.7,
+   "osm_any_incl_cemetery_250m": 93.1,
+   "osm_worship_or_heritage_500m": 89.7,
+   "osm_name_match_2km": 79.3,
+   "model_record_500m": 69.0,
+   "model_record_1km": 69.0,
+   "commons_photo_150m": 48.3,
+   "commons_photo_500m": 51.7
+  },
+  {
+   "region": "Farg'ona viloyati",
+   "sites": 88,
+   "osm_worship_250m": 26.1,
+   "osm_worship_or_heritage_250m": 30.7,
+   "osm_any_incl_cemetery_250m": 60.2,
+   "osm_worship_or_heritage_500m": 36.4,
+   "osm_name_match_2km": 13.6,
+   "model_record_500m": 10.2,
+   "model_record_1km": 18.2,
+   "commons_photo_150m": 8.0,
+   "commons_photo_500m": 10.2
+  },
+  {
+   "region": "Namangan viloyati",
+   "sites": 26,
+   "osm_worship_250m": 11.5,
+   "osm_worship_or_heritage_250m": 15.4,
+   "osm_any_incl_cemetery_250m": 38.5,
+   "osm_worship_or_heritage_500m": 26.9,
+   "osm_name_match_2km": 7.7,
+   "model_record_500m": 3.8,
+   "model_record_1km": 15.4,
+   "commons_photo_150m": 7.7,
+   "commons_photo_500m": 11.5
+  },
+  {
+   "region": "Navoiy viloyati",
+   "sites": 54,
+   "osm_worship_250m": 70.4,
+   "osm_worship_or_heritage_250m": 72.2,
+   "osm_any_incl_cemetery_250m": 79.6,
+   "osm_worship_or_heritage_500m": 74.1,
+   "osm_name_match_2km": 53.7,
+   "model_record_500m": 27.8,
+   "model_record_1km": 35.2,
+   "commons_photo_150m": 9.3,
+   "commons_photo_500m": 22.2
+  },
+  {
+   "region": "Qashqadaryo viloyati",
+   "sites": 51,
+   "osm_worship_250m": 54.9,
+   "osm_worship_or_heritage_250m": 66.7,
+   "osm_any_incl_cemetery_250m": 82.4,
+   "osm_worship_or_heritage_500m": 74.5,
+   "osm_name_match_2km": 35.3,
+   "model_record_500m": 43.1,
+   "model_record_1km": 47.1,
+   "commons_photo_150m": 39.2,
+   "commons_photo_500m": 49.0
+  },
+  {
+   "region": "Qoraqalpog'iston Respublikasi",
+   "sites": 53,
+   "osm_worship_250m": 37.7,
+   "osm_worship_or_heritage_250m": 39.6,
+   "osm_any_incl_cemetery_250m": 81.1,
+   "osm_worship_or_heritage_500m": 39.6,
+   "osm_name_match_2km": 52.8,
+   "model_record_500m": 30.2,
+   "model_record_1km": 43.4,
+   "commons_photo_150m": 11.3,
+   "commons_photo_500m": 15.1
+  },
+  {
+   "region": "Samarqand viloyati",
+   "sites": 61,
+   "osm_worship_250m": 77.0,
+   "osm_worship_or_heritage_250m": 78.7,
+   "osm_any_incl_cemetery_250m": 86.9,
+   "osm_worship_or_heritage_500m": 85.2,
+   "osm_name_match_2km": 54.1,
+   "model_record_500m": 57.4,
+   "model_record_1km": 67.2,
+   "commons_photo_150m": 55.7,
+   "commons_photo_500m": 65.6
+  },
+  {
+   "region": "Sirdaryo viloyati",
+   "sites": 5,
+   "osm_worship_250m": 0.0,
+   "osm_worship_or_heritage_250m": 0.0,
+   "osm_any_incl_cemetery_250m": 0.0,
+   "osm_worship_or_heritage_500m": 0.0,
+   "osm_name_match_2km": 20.0,
+   "model_record_500m": 0.0,
+   "model_record_1km": 0.0,
+   "commons_photo_150m": 0.0,
+   "commons_photo_500m": 100.0
+  },
+  {
+   "region": "Surxondaryo viloyati",
+   "sites": 13,
+   "osm_worship_250m": 53.8,
+   "osm_worship_or_heritage_250m": 61.5,
+   "osm_any_incl_cemetery_250m": 92.3,
+   "osm_worship_or_heritage_500m": 84.6,
+   "osm_name_match_2km": 61.5,
+   "model_record_500m": 53.8,
+   "model_record_1km": 53.8,
+   "commons_photo_150m": 46.2,
+   "commons_photo_500m": 53.8
+  },
+  {
+   "region": "Toshkent shahri",
+   "sites": 15,
+   "osm_worship_250m": 86.7,
+   "osm_worship_or_heritage_250m": 86.7,
+   "osm_any_incl_cemetery_250m": 86.7,
+   "osm_worship_or_heritage_500m": 100.0,
+   "osm_name_match_2km": 73.3,
+   "model_record_500m": 93.3,
+   "model_record_1km": 93.3,
+   "commons_photo_150m": 73.3,
+   "commons_photo_500m": 86.7
+  },
+  {
+   "region": "Toshkent viloyati",
+   "sites": 14,
+   "osm_worship_250m": 7.1,
+   "osm_worship_or_heritage_250m": 7.1,
+   "osm_any_incl_cemetery_250m": 21.4,
+   "osm_worship_or_heritage_500m": 21.4,
+   "osm_name_match_2km": 7.1,
+   "model_record_500m": 21.4,
+   "model_record_1km": 21.4,
+   "commons_photo_150m": 7.1,
+   "commons_photo_500m": 7.1
+  },
+  {
+   "region": "Xorazm viloyati",
+   "sites": 7,
+   "osm_worship_250m": 71.4,
+   "osm_worship_or_heritage_250m": 85.7,
+   "osm_any_incl_cemetery_250m": 85.7,
+   "osm_worship_or_heritage_500m": 85.7,
+   "osm_name_match_2km": 57.1,
+   "model_record_500m": 71.4,
+   "model_record_1km": 71.4,
+   "commons_photo_150m": 57.1,
+   "commons_photo_500m": 57.1
+  }
+ ],
+ "by_faith": [
+  {
+   "faith": "buddhist",
+   "sites": 1,
+   "osm_worship_or_heritage_250m": 0.0,
+   "osm_name_match_2km": 0.0,
+   "model_record_500m": 0.0,
+   "commons_photo_150m": 0.0
+  },
+  {
+   "faith": "christian",
+   "sites": 11,
+   "osm_worship_or_heritage_250m": 81.8,
+   "osm_name_match_2km": 36.4,
+   "model_record_500m": 63.6,
+   "commons_photo_150m": 54.5
+  },
+  {
+   "faith": "islamic",
+   "sites": 492,
+   "osm_worship_or_heritage_250m": 51.2,
+   "osm_name_match_2km": 38.0,
+   "model_record_500m": 30.5,
+   "commons_photo_150m": 22.6
+  },
+  {
+   "faith": "jewish",
+   "sites": 1,
+   "osm_worship_or_heritage_250m": 0.0,
+   "osm_name_match_2km": 0.0,
+   "model_record_500m": 0.0,
+   "commons_photo_150m": 0.0
+  }
+ ],
+ "distance_km_median": {
+  "osm_worship": 0.29,
+  "osm_worship_or_heritage": 0.197,
+  "model_record": 2.245,
+  "commons_photo": 2.135
+ },
+ "name_match": {
+  "matched": 191,
+  "matched_pct": 37.8,
+  "offset_m_median": 26,
+  "offset_m_p75": 97,
+  "offset_m_p90": 310,
+  "offset_over_500m": 14,
+  "with_wikidata": 18
+ },
+ "index_at_sites": {
+  "TSI": {
+   "median_all": 43.8,
+   "median_visible_to_model": 68.4,
+   "median_not_visible_to_model": 35.5,
+   "median_national_percentile_visible": 99.3,
+   "median_national_percentile_not_visible": 91.7,
+   "share_low_class_le2_visible_pct": 13.4,
+   "share_low_class_le2_not_visible_pct": 60.1,
+   "share_high_class_ge4_visible_pct": 72.6,
+   "share_high_class_ge4_not_visible_pct": 12.1
+  },
+  "TPI": {
+   "median_all": 67.8,
+   "median_visible_to_model": 90.5,
+   "median_not_visible_to_model": 58.6,
+   "median_national_percentile_visible": 98.9,
+   "median_national_percentile_not_visible": 90.4,
+   "share_low_class_le2_visible_pct": 0.0,
+   "share_low_class_le2_not_visible_pct": 27.6,
+   "share_high_class_ge4_visible_pct": 91.1,
+   "share_high_class_ge4_not_visible_pct": 47.4
+  }
+ },
+ "counterfactual": {
+  "reproduction_max_abs_difference_vs_published": {
+   "TSI": 0.0013,
+   "TPI": 0.0019
+  },
+  "plain_mosques_excluded_in_variant": 94,
+  "merged_cultural_sites": {
+   "baseline": 1056,
+   "all": 1413,
+   "no_plain_mosques": 1351
+  },
+  "all": {
+   "TSI": {
+    "cells_class_changed": 4321,
+    "cells_class_changed_pct": 0.99,
+    "cells_raised_to_high_class_ge4": 106,
+    "cells_high_class_ge4_baseline": 6215,
+    "mean_change_all_cells": 0.223,
+    "max_change": 34.4,
+    "cells_change_ge10_points": 1061,
+    "site_cells_median_baseline": 39.9,
+    "site_cells_median_with_inventory": 44.1,
+    "site_cells_low_class_le2_baseline_pct": 50.2,
+    "site_cells_low_class_le2_with_inventory_pct": 42.1,
+    "regional_rank_spearman_baseline_vs_augmented": 0.991,
+    "regions_changing_rank": 4,
+    "commons_pud_weighted_auc": {
+     "baseline": 0.6887,
+     "with_inventory": 0.6886,
+     "difference_ci95_block_bootstrap": [
+      -0.0004,
+      0.0001
+     ]
+    },
+    "changed_cells_reported_stable_ge80pct": 203,
+    "changed_cells_reported_stable_ge80pct_share_of_changed": 4.7,
+    "cells_change_exceeds_mc_band_width": 3,
+    "site_cells_change_exceeds_mc_band_width_pct": 0.0,
+    "regional": [
+     {
+      "region": "Andijon",
+      "mean_baseline": 33.73,
+      "mean_with_inventory": 36.02,
+      "cells_class_changed_pct": 11.65,
+      "cells_up_to_high_class": 28,
+      "rank_baseline": 3,
+      "rank_with_inventory": 3
+     },
+     {
+      "region": "Namangan",
+      "mean_baseline": 24.4,
+      "mean_with_inventory": 25.5,
+      "cells_class_changed_pct": 5.43,
+      "cells_up_to_high_class": 7,
+      "rank_baseline": 6,
+      "rank_with_inventory": 5
+     },
+     {
+      "region": "Farg‘ona",
+      "mean_baseline": 25.61,
+      "mean_with_inventory": 28.18,
+      "cells_class_changed_pct": 12.13,
+      "cells_up_to_high_class": 25,
+      "rank_baseline": 4,
+      "rank_with_inventory": 4
+     },
+     {
+      "region": "Qoraqalpog‘iston",
+      "mean_baseline": 4.41,
+      "mean_with_inventory": 4.45,
+      "cells_class_changed_pct": 0.12,
+      "cells_up_to_high_class": 3,
+      "rank_baseline": 13,
+      "rank_with_inventory": 14
+     },
+     {
+      "region": "Xorazm",
+      "mean_baseline": 25.16,
+      "mean_with_inventory": 25.39,
+      "cells_class_changed_pct": 1.5,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 5,
+      "rank_with_inventory": 6
+     },
+     {
+      "region": "Navoiy",
+      "mean_baseline": 4.38,
+      "mean_with_inventory": 4.5,
+      "cells_class_changed_pct": 0.63,
+      "cells_up_to_high_class": 10,
+      "rank_baseline": 14,
+      "rank_with_inventory": 13
+     },
+     {
+      "region": "Surxondaryo",
+      "mean_baseline": 17.88,
+      "mean_with_inventory": 17.96,
+      "cells_class_changed_pct": 0.25,
+      "cells_up_to_high_class": 2,
+      "rank_baseline": 10,
+      "rank_with_inventory": 10
+     },
+     {
+      "region": "Samarqand",
+      "mean_baseline": 18.22,
+      "mean_with_inventory": 19.12,
+      "cells_class_changed_pct": 3.12,
+      "cells_up_to_high_class": 2,
+      "rank_baseline": 9,
+      "rank_with_inventory": 9
+     },
+     {
+      "region": "Toshkent viloyati",
+      "mean_baseline": 42.14,
+      "mean_with_inventory": 42.26,
+      "cells_class_changed_pct": 0.51,
+      "cells_up_to_high_class": 5,
+      "rank_baseline": 2,
+      "rank_with_inventory": 2
+     },
+     {
+      "region": "Sirdaryo",
+      "mean_baseline": 24.39,
+      "mean_with_inventory": 24.39,
+      "cells_class_changed_pct": 0.05,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 7,
+      "rank_with_inventory": 7
+     },
+     {
+      "region": "Jizzax",
+      "mean_baseline": 21.42,
+      "mean_with_inventory": 21.58,
+      "cells_class_changed_pct": 0.77,
+      "cells_up_to_high_class": 2,
+      "rank_baseline": 8,
+      "rank_with_inventory": 8
+     },
+     {
+      "region": "Buxoro",
+      "mean_baseline": 10.18,
+      "mean_with_inventory": 10.4,
+      "cells_class_changed_pct": 0.95,
+      "cells_up_to_high_class": 21,
+      "rank_baseline": 12,
+      "rank_with_inventory": 12
+     },
+     {
+      "region": "Qashqadaryo",
+      "mean_baseline": 13.36,
+      "mean_with_inventory": 13.77,
+      "cells_class_changed_pct": 1.72,
+      "cells_up_to_high_class": 1,
+      "rank_baseline": 11,
+      "rank_with_inventory": 11
+     },
+     {
+      "region": "Toshkent shahri",
+      "mean_baseline": 85.07,
+      "mean_with_inventory": 85.09,
+      "cells_class_changed_pct": 0.0,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 1,
+      "rank_with_inventory": 1
+     }
+    ]
+   },
+   "TPI": {
+    "cells_class_changed": 34928,
+    "cells_class_changed_pct": 7.97,
+    "cells_raised_to_high_class_ge4": 10444,
+    "cells_high_class_ge4_baseline": 39260,
+    "mean_change_all_cells": 1.817,
+    "max_change": 56.0,
+    "cells_change_ge10_points": 26087,
+    "site_cells_median_baseline": 64.7,
+    "site_cells_median_with_inventory": 80.2,
+    "site_cells_low_class_le2_baseline_pct": 22.0,
+    "site_cells_low_class_le2_with_inventory_pct": 0.2,
+    "regional_rank_spearman_baseline_vs_augmented": 0.987,
+    "regions_changing_rank": 3,
+    "commons_pud_weighted_auc": {
+     "baseline": 0.6978,
+     "with_inventory": 0.6968,
+     "difference_ci95_block_bootstrap": [
+      -0.0024,
+      0.0004
+     ]
+    },
+    "changed_cells_reported_stable_ge80pct": 1311,
+    "changed_cells_reported_stable_ge80pct_share_of_changed": 3.8,
+    "cells_change_exceeds_mc_band_width": 565,
+    "site_cells_change_exceeds_mc_band_width_pct": 3.1,
+    "regional": [
+     {
+      "region": "Andijon",
+      "mean_baseline": 56.44,
+      "mean_with_inventory": 72.96,
+      "cells_class_changed_pct": 73.3,
+      "cells_up_to_high_class": 2005,
+      "rank_baseline": 3,
+      "rank_with_inventory": 3
+     },
+     {
+      "region": "Namangan",
+      "mean_baseline": 45.28,
+      "mean_with_inventory": 55.31,
+      "cells_class_changed_pct": 47.08,
+      "cells_up_to_high_class": 1241,
+      "rank_baseline": 5,
+      "rank_with_inventory": 5
+     },
+     {
+      "region": "Farg‘ona",
+      "mean_baseline": 47.25,
+      "mean_with_inventory": 61.8,
+      "cells_class_changed_pct": 64.68,
+      "cells_up_to_high_class": 1795,
+      "rank_baseline": 4,
+      "rank_with_inventory": 4
+     },
+     {
+      "region": "Qoraqalpog‘iston",
+      "mean_baseline": 13.37,
+      "mean_with_inventory": 13.98,
+      "cells_class_changed_pct": 3.3,
+      "cells_up_to_high_class": 914,
+      "rank_baseline": 13,
+      "rank_with_inventory": 13
+     },
+     {
+      "region": "Xorazm",
+      "mean_baseline": 41.5,
+      "mean_with_inventory": 42.62,
+      "cells_class_changed_pct": 5.34,
+      "cells_up_to_high_class": 151,
+      "rank_baseline": 7,
+      "rank_with_inventory": 7
+     },
+     {
+      "region": "Navoiy",
+      "mean_baseline": 9.64,
+      "mean_with_inventory": 10.63,
+      "cells_class_changed_pct": 3.7,
+      "cells_up_to_high_class": 1435,
+      "rank_baseline": 14,
+      "rank_with_inventory": 14
+     },
+     {
+      "region": "Surxondaryo",
+      "mean_baseline": 42.22,
+      "mean_with_inventory": 43.6,
+      "cells_class_changed_pct": 6.66,
+      "cells_up_to_high_class": 386,
+      "rank_baseline": 6,
+      "rank_with_inventory": 6
+     },
+     {
+      "region": "Samarqand",
+      "mean_baseline": 34.34,
+      "mean_with_inventory": 40.91,
+      "cells_class_changed_pct": 24.72,
+      "cells_up_to_high_class": 640,
+      "rank_baseline": 10,
+      "rank_with_inventory": 8
+     },
+     {
+      "region": "Toshkent viloyati",
+      "mean_baseline": 74.94,
+      "mean_with_inventory": 75.59,
+      "cells_class_changed_pct": 3.43,
+      "cells_up_to_high_class": 296,
+      "rank_baseline": 2,
+      "rank_with_inventory": 2
+     },
+     {
+      "region": "Sirdaryo",
+      "mean_baseline": 36.27,
+      "mean_with_inventory": 36.86,
+      "cells_class_changed_pct": 3.23,
+      "cells_up_to_high_class": 68,
+      "rank_baseline": 9,
+      "rank_with_inventory": 10
+     },
+     {
+      "region": "Jizzax",
+      "mean_baseline": 38.8,
+      "mean_with_inventory": 39.57,
+      "cells_class_changed_pct": 2.6,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 8,
+      "rank_with_inventory": 9
+     },
+     {
+      "region": "Buxoro",
+      "mean_baseline": 13.96,
+      "mean_with_inventory": 15.31,
+      "cells_class_changed_pct": 5.29,
+      "cells_up_to_high_class": 562,
+      "rank_baseline": 12,
+      "rank_with_inventory": 12
+     },
+     {
+      "region": "Qashqadaryo",
+      "mean_baseline": 25.27,
+      "mean_with_inventory": 29.71,
+      "cells_class_changed_pct": 20.32,
+      "cells_up_to_high_class": 951,
+      "rank_baseline": 11,
+      "rank_with_inventory": 11
+     },
+     {
+      "region": "Toshkent shahri",
+      "mean_baseline": 95.02,
+      "mean_with_inventory": 94.91,
+      "cells_class_changed_pct": 0.0,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 1,
+      "rank_with_inventory": 1
+     }
+    ]
+   }
+  },
+  "no_plain_mosques": {
+   "TSI": {
+    "cells_class_changed": 3659,
+    "cells_class_changed_pct": 0.84,
+    "cells_raised_to_high_class_ge4": 90,
+    "cells_high_class_ge4_baseline": 6215,
+    "mean_change_all_cells": 0.189,
+    "max_change": 34.4,
+    "cells_change_ge10_points": 797,
+    "site_cells_median_baseline": 39.9,
+    "site_cells_median_with_inventory": 43.8,
+    "site_cells_low_class_le2_baseline_pct": 50.2,
+    "site_cells_low_class_le2_with_inventory_pct": 42.6,
+    "regional_rank_spearman_baseline_vs_augmented": 0.996,
+    "regions_changing_rank": 2,
+    "commons_pud_weighted_auc": {
+     "baseline": 0.6887,
+     "with_inventory": 0.6886,
+     "difference_ci95_block_bootstrap": [
+      -0.0003,
+      0.0002
+     ]
+    },
+    "changed_cells_reported_stable_ge80pct": 100,
+    "changed_cells_reported_stable_ge80pct_share_of_changed": 2.7,
+    "cells_change_exceeds_mc_band_width": 3,
+    "site_cells_change_exceeds_mc_band_width_pct": 0.0,
+    "regional": [
+     {
+      "region": "Andijon",
+      "mean_baseline": 33.73,
+      "mean_with_inventory": 35.71,
+      "cells_class_changed_pct": 10.24,
+      "cells_up_to_high_class": 24,
+      "rank_baseline": 3,
+      "rank_with_inventory": 3
+     },
+     {
+      "region": "Namangan",
+      "mean_baseline": 24.4,
+      "mean_with_inventory": 25.49,
+      "cells_class_changed_pct": 5.43,
+      "cells_up_to_high_class": 7,
+      "rank_baseline": 6,
+      "rank_with_inventory": 5
+     },
+     {
+      "region": "Farg‘ona",
+      "mean_baseline": 25.61,
+      "mean_with_inventory": 28.18,
+      "cells_class_changed_pct": 12.13,
+      "cells_up_to_high_class": 25,
+      "rank_baseline": 4,
+      "rank_with_inventory": 4
+     },
+     {
+      "region": "Qoraqalpog‘iston",
+      "mean_baseline": 4.41,
+      "mean_with_inventory": 4.45,
+      "cells_class_changed_pct": 0.12,
+      "cells_up_to_high_class": 3,
+      "rank_baseline": 13,
+      "rank_with_inventory": 13
+     },
+     {
+      "region": "Xorazm",
+      "mean_baseline": 25.16,
+      "mean_with_inventory": 25.38,
+      "cells_class_changed_pct": 1.4,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 5,
+      "rank_with_inventory": 6
+     },
+     {
+      "region": "Navoiy",
+      "mean_baseline": 4.38,
+      "mean_with_inventory": 4.42,
+      "cells_class_changed_pct": 0.25,
+      "cells_up_to_high_class": 1,
+      "rank_baseline": 14,
+      "rank_with_inventory": 14
+     },
+     {
+      "region": "Surxondaryo",
+      "mean_baseline": 17.88,
+      "mean_with_inventory": 17.96,
+      "cells_class_changed_pct": 0.25,
+      "cells_up_to_high_class": 2,
+      "rank_baseline": 10,
+      "rank_with_inventory": 10
+     },
+     {
+      "region": "Samarqand",
+      "mean_baseline": 18.22,
+      "mean_with_inventory": 19.02,
+      "cells_class_changed_pct": 2.48,
+      "cells_up_to_high_class": 1,
+      "rank_baseline": 9,
+      "rank_with_inventory": 9
+     },
+     {
+      "region": "Toshkent viloyati",
+      "mean_baseline": 42.14,
+      "mean_with_inventory": 42.26,
+      "cells_class_changed_pct": 0.51,
+      "cells_up_to_high_class": 5,
+      "rank_baseline": 2,
+      "rank_with_inventory": 2
+     },
+     {
+      "region": "Sirdaryo",
+      "mean_baseline": 24.39,
+      "mean_with_inventory": 24.39,
+      "cells_class_changed_pct": 0.05,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 7,
+      "rank_with_inventory": 7
+     },
+     {
+      "region": "Jizzax",
+      "mean_baseline": 21.42,
+      "mean_with_inventory": 21.51,
+      "cells_class_changed_pct": 0.43,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 8,
+      "rank_with_inventory": 8
+     },
+     {
+      "region": "Buxoro",
+      "mean_baseline": 10.18,
+      "mean_with_inventory": 10.37,
+      "cells_class_changed_pct": 0.9,
+      "cells_up_to_high_class": 21,
+      "rank_baseline": 12,
+      "rank_with_inventory": 12
+     },
+     {
+      "region": "Qashqadaryo",
+      "mean_baseline": 13.36,
+      "mean_with_inventory": 13.77,
+      "cells_class_changed_pct": 1.72,
+      "cells_up_to_high_class": 1,
+      "rank_baseline": 11,
+      "rank_with_inventory": 11
+     },
+     {
+      "region": "Toshkent shahri",
+      "mean_baseline": 85.07,
+      "mean_with_inventory": 85.09,
+      "cells_class_changed_pct": 0.0,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 1,
+      "rank_with_inventory": 1
+     }
+    ]
+   },
+   "TPI": {
+    "cells_class_changed": 30339,
+    "cells_class_changed_pct": 6.93,
+    "cells_raised_to_high_class_ge4": 8636,
+    "cells_high_class_ge4_baseline": 39260,
+    "mean_change_all_cells": 1.508,
+    "max_change": 44.4,
+    "cells_change_ge10_points": 21469,
+    "site_cells_median_baseline": 64.7,
+    "site_cells_median_with_inventory": 78.1,
+    "site_cells_low_class_le2_baseline_pct": 22.0,
+    "site_cells_low_class_le2_with_inventory_pct": 3.6,
+    "regional_rank_spearman_baseline_vs_augmented": 0.996,
+    "regions_changing_rank": 2,
+    "commons_pud_weighted_auc": {
+     "baseline": 0.6978,
+     "with_inventory": 0.6973,
+     "difference_ci95_block_bootstrap": [
+      -0.0014,
+      0.0007
+     ]
+    },
+    "changed_cells_reported_stable_ge80pct": 705,
+    "changed_cells_reported_stable_ge80pct_share_of_changed": 2.3,
+    "cells_change_exceeds_mc_band_width": 165,
+    "site_cells_change_exceeds_mc_band_width_pct": 1.2,
+    "regional": [
+     {
+      "region": "Andijon",
+      "mean_baseline": 56.44,
+      "mean_with_inventory": 70.49,
+      "cells_class_changed_pct": 64.96,
+      "cells_up_to_high_class": 1691,
+      "rank_baseline": 3,
+      "rank_with_inventory": 3
+     },
+     {
+      "region": "Namangan",
+      "mean_baseline": 45.28,
+      "mean_with_inventory": 54.92,
+      "cells_class_changed_pct": 45.3,
+      "cells_up_to_high_class": 1132,
+      "rank_baseline": 5,
+      "rank_with_inventory": 5
+     },
+     {
+      "region": "Farg‘ona",
+      "mean_baseline": 47.25,
+      "mean_with_inventory": 61.72,
+      "cells_class_changed_pct": 64.46,
+      "cells_up_to_high_class": 1794,
+      "rank_baseline": 4,
+      "rank_with_inventory": 4
+     },
+     {
+      "region": "Qoraqalpog‘iston",
+      "mean_baseline": 13.37,
+      "mean_with_inventory": 13.98,
+      "cells_class_changed_pct": 3.28,
+      "cells_up_to_high_class": 906,
+      "rank_baseline": 13,
+      "rank_with_inventory": 13
+     },
+     {
+      "region": "Xorazm",
+      "mean_baseline": 41.5,
+      "mean_with_inventory": 42.54,
+      "cells_class_changed_pct": 4.83,
+      "cells_up_to_high_class": 130,
+      "rank_baseline": 7,
+      "rank_with_inventory": 7
+     },
+     {
+      "region": "Navoiy",
+      "mean_baseline": 9.64,
+      "mean_with_inventory": 9.97,
+      "cells_class_changed_pct": 1.63,
+      "cells_up_to_high_class": 417,
+      "rank_baseline": 14,
+      "rank_with_inventory": 14
+     },
+     {
+      "region": "Surxondaryo",
+      "mean_baseline": 42.22,
+      "mean_with_inventory": 43.6,
+      "cells_class_changed_pct": 6.66,
+      "cells_up_to_high_class": 386,
+      "rank_baseline": 6,
+      "rank_with_inventory": 6
+     },
+     {
+      "region": "Samarqand",
+      "mean_baseline": 34.34,
+      "mean_with_inventory": 39.23,
+      "cells_class_changed_pct": 18.04,
+      "cells_up_to_high_class": 419,
+      "rank_baseline": 10,
+      "rank_with_inventory": 9
+     },
+     {
+      "region": "Toshkent viloyati",
+      "mean_baseline": 74.94,
+      "mean_with_inventory": 75.59,
+      "cells_class_changed_pct": 3.41,
+      "cells_up_to_high_class": 295,
+      "rank_baseline": 2,
+      "rank_with_inventory": 2
+     },
+     {
+      "region": "Sirdaryo",
+      "mean_baseline": 36.27,
+      "mean_with_inventory": 36.86,
+      "cells_class_changed_pct": 3.23,
+      "cells_up_to_high_class": 68,
+      "rank_baseline": 9,
+      "rank_with_inventory": 10
+     },
+     {
+      "region": "Jizzax",
+      "mean_baseline": 38.8,
+      "mean_with_inventory": 39.32,
+      "cells_class_changed_pct": 1.77,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 8,
+      "rank_with_inventory": 8
+     },
+     {
+      "region": "Buxoro",
+      "mean_baseline": 13.96,
+      "mean_with_inventory": 14.97,
+      "cells_class_changed_pct": 4.22,
+      "cells_up_to_high_class": 471,
+      "rank_baseline": 12,
+      "rank_with_inventory": 12
+     },
+     {
+      "region": "Qashqadaryo",
+      "mean_baseline": 25.27,
+      "mean_with_inventory": 29.62,
+      "cells_class_changed_pct": 19.9,
+      "cells_up_to_high_class": 927,
+      "rank_baseline": 11,
+      "rank_with_inventory": 11
+     },
+     {
+      "region": "Toshkent shahri",
+      "mean_baseline": 95.02,
+      "mean_with_inventory": 94.93,
+      "cells_class_changed_pct": 0.0,
+      "cells_up_to_high_class": 0,
+      "rank_baseline": 1,
+      "rank_with_inventory": 1
+     }
+    ]
+   }
+  }
+ },
+ "note": "OSM absence means not mapped, not absent on the ground. Name matching uses a consonant skeleton of the name without generic words (mosque, mausoleum, shrine ...) and a fuzzy token-set ratio >= 85 within 2 km; see site_visibility.csv for every pair."
+}
